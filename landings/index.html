@@ -1,0 +1,613 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#020617">
+  <meta
+    name="description"
+    content="Dashboard técnico de prototipos frontend para maquinaria industrial."
+  >
+
+  <title>Interfaces Requeridas | Dashboard de Demos</title>
+
+  <!-- Tailwind CSS CDN v3 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configuración de Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            mono: ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      color-scheme: dark;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #020617;
+    }
+
+    ::selection {
+      color: #ffffff;
+      background-color: #2563eb;
+    }
+
+    .technical-grid {
+      background-image:
+        linear-gradient(rgba(148, 163, 184, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.035) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    .demo-card {
+      transition:
+        transform 250ms ease,
+        border-color 250ms ease,
+        box-shadow 250ms ease;
+    }
+
+    .demo-card:hover {
+      transform: translateY(-4px);
+      border-color: #475569;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .demo-card:focus-within {
+      border-color: #60a5fa;
+    }
+
+    .demo-number {
+      color: #cbd5e1;
+      font-family: "JetBrains Mono", monospace;
+      letter-spacing: -0.09em;
+      line-height: 1;
+    }
+
+    .attribute-label {
+      color: #64748b;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .palette-dot {
+      width: 15px;
+      height: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .launch-button svg {
+      transition: transform 200ms ease;
+    }
+
+    .launch-button:hover svg {
+      transform: translateX(4px);
+    }
+
+    a:focus-visible {
+      outline: 2px solid #60a5fa;
+      outline-offset: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="min-h-screen overflow-x-hidden text-slate-200 antialiased">
+
+  <!-- Fondo técnico -->
+  <div
+    class="technical-grid pointer-events-none fixed inset-0 -z-10"
+    aria-hidden="true"
+  ></div>
+
+  <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+
+    <!-- HEADER -->
+    <header class="border-b border-slate-800/80 py-6 sm:py-8">
+      <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+
+        <div class="flex items-center gap-3">
+          <div class="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-700 bg-slate-900 text-slate-100">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+              <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+              <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+              <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+            </svg>
+          </div>
+
+          <div>
+            <p class="text-sm font-bold tracking-wide text-white">
+              PAGINAS LANDING
+            </p>
+            <p class="mt-1 font-mono text-[10px] uppercase tracking-[0.16em] text-slate-500">
+              Industrial UI Prototipos
+            </p>
+          </div>
+        </div>
+
+        <div class="inline-flex w-fit items-center gap-2 rounded-lg border border-emerald-500/20 bg-emerald-500/[0.06] px-3 py-2">
+          <span class="relative flex h-2 w-2">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-30"></span>
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
+          </span>
+          <span class="font-mono text-[11px] font-medium text-emerald-300">
+            Repositorio Online
+          </span>
+        </div>
+      </div>
+
+      <div class="mt-10 max-w-4xl pb-1 sm:mt-14">
+        <p class="mb-4 font-mono text-[10px] font-medium uppercase tracking-[0.22em] text-blue-400 sm:text-xs">
+          Catálogo técnico / 2026
+        </p>
+
+        <h1 class="max-w-4xl text-3xl font-extrabold leading-tight tracking-[-0.045em] text-white sm:text-4xl lg:text-5xl">
+          INTERFACES REQUERIDAS:
+          <span class="block text-slate-400">SECTOR INDUSTRIAL</span>
+        </h1> 
+      </div>
+
+      <!-- Información resumida -->
+      <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 border-t border-slate-800/70 pt-5 font-mono text-[10px] uppercase tracking-wider text-slate-500 sm:text-xs">
+        <span>Prototipos <strong class="ml-1 text-slate-300">06</strong></span>
+        <span>Framework <strong class="ml-1 text-slate-300">HTML / Tailwind</strong></span>
+        <span>Deploy <strong class="ml-1 text-slate-300">GitHub Pages</strong></span>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="py-8 sm:py-10">
+
+      <div class="mb-6 flex items-end justify-between gap-4">
+        <div>
+          <p class="font-mono text-[10px] uppercase tracking-[0.18em] text-slate-500">
+            Directorio de interfaces
+          </p>
+          <h2 class="mt-2 text-lg font-bold tracking-tight text-white sm:text-xl">
+            Prototipos disponibles
+          </h2>
+        </div>
+
+        <span class="font-mono text-xs text-slate-500">01—06</span>
+      </div>
+
+      <!-- GRID: 6 propuestas -->
+      <section
+        id="prototipos"
+        aria-label="Listado de seis propuestas de diseño"
+        class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3"
+      >
+
+        <!-- 01 -->
+        <article class="demo-card flex flex-col rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <div class="flex items-start justify-between">
+            <span class="demo-number text-5xl font-medium">01</span>
+            <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 font-mono text-[10px] text-slate-400">
+              UI / 01
+            </span>
+          </div>
+
+          <h3 class="mt-5 text-base font-semibold text-white">
+            Propuesta de Diseño 01
+          </h3>
+
+          <div class="mt-5 space-y-3 border-y border-slate-800/80 py-4">
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Modo</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-[11px] text-slate-300">
+                Dark Mode
+              </span>
+            </div>
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Densidad</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-right text-[11px] text-slate-300">
+                Moderno
+              </span>
+            </div>
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Formulario</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-right text-[11px] text-slate-300">
+                Tradicional
+              </span>
+            </div>
+          </div>
+
+          <!-- <div class="mt-4 flex items-center justify-between">
+            <span class="attribute-label">Paleta base</span>
+            <div class="flex items-center gap-2" aria-label="Azul marino, gris y azul eléctrico">
+              <span class="palette-dot bg-[#020617]" title="Azul noche"></span>
+              <span class="palette-dot bg-[#334155]" title="Gris pizarra"></span>
+              <span class="palette-dot bg-[#3B82F6]" title="Azul eléctrico"></span>
+            </div>
+          </div> -->
+
+          <a
+            href="landing-V1/index.html"
+            class="launch-button mt-6 inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-slate-700 bg-slate-800 px-4 py-3 text-xs font-semibold text-slate-200 transition-all duration-200 hover:border-blue-500/60 hover:bg-blue-600 hover:text-white"
+          >
+            Lanzar Demo en Vivo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        </article>
+
+        <!-- 02 -->
+        <article class="demo-card flex flex-col rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <div class="flex items-start justify-between">
+            <span class="demo-number text-5xl font-medium">02</span>
+            <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 font-mono text-[10px] text-slate-400">
+              UI / 02
+            </span>
+          </div>
+
+          <h3 class="mt-5 text-base font-semibold text-white">
+            Propuesta de Diseño 02
+          </h3>
+
+          <div class="mt-5 space-y-3 border-y border-slate-800/80 py-4">
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Modo</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-[11px] text-slate-300">
+                Light Mode
+              </span>
+            </div>
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Estilo</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-right text-[11px] text-slate-300">
+                Clasico
+              </span>
+            </div>
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Formulario</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-right text-[11px] text-slate-300">
+                Tradicional
+              </span>
+            </div>
+          </div>
+
+          <!-- <div class="mt-4 flex items-center justify-between">
+            <span class="attribute-label">Paleta base</span>
+            <div class="flex items-center gap-2" aria-label="Blanco, azul oscuro y gris">
+              <span class="palette-dot bg-[#F8FAFC]" title="Blanco"></span>
+              <span class="palette-dot bg-[#1E3A5F]" title="Azul institucional"></span>
+              <span class="palette-dot bg-[#94A3B8]" title="Gris"></span>
+            </div>
+          </div> -->
+
+          <a href="landing-V2/index.html" class="launch-button mt-6 inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-slate-700 bg-slate-800 px-4 py-3 text-xs font-semibold text-slate-200 transition-all duration-200 hover:border-blue-500/60 hover:bg-blue-600 hover:text-white">
+            Lanzar Demo en Vivo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        </article>
+
+        <!-- 03 -->
+        <article class="demo-card flex flex-col rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <div class="flex items-start justify-between">
+            <span class="demo-number text-5xl font-medium">03</span>
+            <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 font-mono text-[10px] text-slate-400">
+              UI / 03
+            </span>
+          </div>
+
+          <h3 class="mt-5 text-base font-semibold text-white">
+            Propuesta de Diseño 03
+          </h3>
+
+          <div class="mt-5 space-y-3 border-y border-slate-800/80 py-4">
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Modo</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-[11px] text-slate-300">
+                Light Mode
+              </span>
+            </div>
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Estiulo</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-right text-[11px] text-slate-300">
+                Minimalista / Visual
+              </span>
+            </div>
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Formulario</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-right text-[11px] text-slate-300">
+                Tradicional
+              </span>
+            </div>
+          </div>
+
+          <!-- <div class="mt-4 flex items-center justify-between">
+            <span class="attribute-label">Paleta base</span>
+            <div class="flex items-center gap-2" aria-label="Blanco, negro y carmín">
+              <span class="palette-dot bg-[#FFFFFF]" title="Blanco"></span>
+              <span class="palette-dot bg-[#171717]" title="Negro"></span>
+              <span class="palette-dot bg-[#DC1624]" title="Carmín"></span>
+            </div>
+          </div> -->
+
+          <a href="landing-V3/index.html" class="launch-button mt-6 inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-slate-700 bg-slate-800 px-4 py-3 text-xs font-semibold text-slate-200 transition-all duration-200 hover:border-blue-500/60 hover:bg-blue-600 hover:text-white">
+            Lanzar Demo en Vivo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        </article>
+
+        <!-- 04 -->
+        <article class="demo-card flex flex-col rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <div class="flex items-start justify-between">
+            <span class="demo-number text-5xl font-medium">04</span>
+            <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 font-mono text-[10px] text-slate-400">
+              UI / 04
+            </span>
+          </div>
+
+          <h3 class="mt-5 text-base font-semibold text-white">
+            Propuesta de Diseño 04
+          </h3>
+
+          <div class="mt-5 space-y-3 border-y border-slate-800/80 py-4">
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Modo</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-[11px] text-slate-300">
+                Light Mode
+              </span>
+            </div>
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Estilo</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-right text-[11px] text-slate-300">
+                Minimalista / Limpio
+              </span>
+            </div>
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Formulario</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-right text-[11px] text-slate-300">
+                Contacto rapido
+              </span>
+            </div>
+          </div>
+
+          <!-- <div class="mt-4 flex items-center justify-between">
+            <span class="attribute-label">Paleta base</span>
+            <div class="flex items-center gap-2" aria-label="Azul oscuro, gris y cian">
+              <span class="palette-dot bg-[#0F172A]" title="Azul noche"></span>
+              <span class="palette-dot bg-[#475569]" title="Gris acero"></span>
+              <span class="palette-dot bg-[#22D3EE]" title="Cian"></span>
+            </div>
+          </div> -->
+
+          <a href="landing-V4/index.html" class="launch-button mt-6 inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-slate-700 bg-slate-800 px-4 py-3 text-xs font-semibold text-slate-200 transition-all duration-200 hover:border-blue-500/60 hover:bg-blue-600 hover:text-white">
+            Lanzar Demo en Vivo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        </article>
+
+        <!-- 05 -->
+        <article class="demo-card flex flex-col rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <div class="flex items-start justify-between">
+            <span class="demo-number text-5xl font-medium">05</span>
+            <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 font-mono text-[10px] text-slate-400">
+              UI / 05
+            </span>
+          </div>
+
+          <h3 class="mt-5 text-base font-semibold text-white">
+            Propuesta de Diseño 05
+          </h3>
+
+          <div class="mt-5 space-y-3 border-y border-slate-800/80 py-4">
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Modo</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-[11px] text-slate-300">
+                Light Mode
+              </span>
+            </div>
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Estilo</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-right text-[11px] text-slate-300">
+                Clasico / Detallado
+              </span>
+            </div>
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Formulario</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-right text-[11px] text-slate-300">
+                Tradicional
+              </span>
+            </div>
+          </div>
+
+          <!-- <div class="mt-4 flex items-center justify-between">
+            <span class="attribute-label">Paleta base</span>
+            <div class="flex items-center gap-2" aria-label="Blanco, gris y naranja">
+              <span class="palette-dot bg-[#FAFAFA]" title="Blanco"></span>
+              <span class="palette-dot bg-[#52525B]" title="Gris"></span>
+              <span class="palette-dot bg-[#F97316]" title="Naranja"></span>
+            </div>
+          </div> -->
+
+          <a href="landing-V5/index.html" class="launch-button mt-6 inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-slate-700 bg-slate-800 px-4 py-3 text-xs font-semibold text-slate-200 transition-all duration-200 hover:border-blue-500/60 hover:bg-blue-600 hover:text-white">
+            Lanzar Demo en Vivo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        </article>
+
+        <!-- 06 -->
+        <article class="demo-card flex flex-col rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <div class="flex items-start justify-between">
+            <span class="demo-number text-5xl font-medium">06</span>
+            <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 font-mono text-[10px] text-slate-400">
+              UI / 06
+            </span>
+          </div>
+
+          <h3 class="mt-5 text-base font-semibold text-white">
+            Propuesta de Diseño 06
+          </h3>
+
+          <div class="mt-5 space-y-3 border-y border-slate-800/80 py-4">
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Modo</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-[11px] text-slate-300">
+                Combinado
+              </span>
+            </div>
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Estilo</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-right text-[11px] text-slate-300">
+                Clasico / Moderno
+              </span>
+            </div>
+            <div class="flex items-center justify-between gap-3">
+              <span class="attribute-label">Formulario</span>
+              <span class="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-right text-[11px] text-slate-300">
+                Tradicional
+              </span>
+            </div>
+          </div>
+
+          <!-- <div class="mt-4 flex items-center justify-between">
+            <span class="attribute-label">Paleta base</span>
+            <div class="flex items-center gap-2" aria-label="Azul noche, violeta y lavanda">
+              <span class="palette-dot bg-[#0F172A]" title="Azul noche"></span>
+              <span class="palette-dot bg-[#7C3AED]" title="Violeta"></span>
+              <span class="palette-dot bg-[#A78BFA]" title="Lavanda"></span>
+            </div>
+          </div> -->
+
+          <a href="landing-V6/index.html" class="launch-button mt-6 inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-slate-700 bg-slate-800 px-4 py-3 text-xs font-semibold text-slate-200 transition-all duration-200 hover:border-blue-500/60 hover:bg-blue-600 hover:text-white">
+            Lanzar Demo en Vivo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        </article>
+
+      </section>
+
+      <!-- Estado del directorio -->
+      <div class="mt-6 flex flex-col gap-3 rounded-xl border border-slate-800/80 bg-slate-900/60 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-5">
+        <div class="flex items-center gap-3">
+          <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-800 text-slate-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"></path>
+            </svg>
+          </span>
+          <div>
+            <p class="text-xs font-semibold text-slate-300">Índice de prototipos</p>
+            <p class="mt-1 text-[11px] text-slate-500">Rutas relativas · Directorios independientes</p>
+          </div>
+        </div>
+
+        <span class="w-fit rounded-md border border-slate-800 bg-slate-950 px-3 py-2 font-mono text-[10px] text-slate-400">
+          STATUS: STATIC / READY
+        </span>
+      </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800/80 py-6">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p class="text-xs font-medium text-slate-400">
+            Desarrollado por <span class="text-slate-200">Gonzalo Ruiz Hoyos</span>
+          </p>
+          <p class="mt-1 font-mono text-[10px] text-slate-600">
+            Industrial UI / Landing Portfalio
+          </p>
+        </div>
+
+        <!-- Sustituir por el perfil real -->
+        <a
+          href="https://github.com/TU-USUARIO"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex w-fit items-center gap-2 text-xs font-medium text-slate-400 transition-colors hover:text-white"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.71-1.49-2.48-.28-5.09-1.24-5.09-5.51 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.15a10.62 10.62 0 0 1 5.55 0c2.11-1.45 3.04-1.15 3.04-1.15.61 1.53.23 2.67.12 2.95.71.78 1.14 1.78 1.14 3 0 4.28-2.61 5.22-5.1 5.5.4.35.76 1.02.76 2.06v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"></path>
+          </svg>
+          GitHub / ZaloRuiz
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17 17 7"></path>
+            <path d="M7 7h10v10"></path>
+          </svg>
+        </a>
+      </div>
+
+      <div class="mt-5 flex flex-col gap-2 border-t border-slate-900 pt-4 font-mono text-[10px] text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+        <span>© <span id="year">2026</span> · Todos los derechos reservados</span>
+        <span>HTML5 / Tailwind CSS / GitHub Pages</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- JavaScript mínimo -->
+  <script>
+    "use strict";
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>

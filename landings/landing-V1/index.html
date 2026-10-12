@@ -1,0 +1,587 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Maquinaria Industrial | Potencia, Precisión y Respaldo Técnico</title>
+  <meta name="description"
+        content="Importación de montacargas, maquinaria para talleres vehiculares, repuestos originales y servicio técnico especializado. Solicite una cotización.">
+  <meta name="theme-color" content="#1E2229">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+  <!-- Tailwind Play CDN: ideal para prototipos.
+       Para producción, compilar Tailwind mediante CLI o Vite. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            industrial: {
+              bg: '#1E2229',
+              panel: '#252B34',
+              raised: '#2D3540',
+              blue: '#00A3FF',
+              blueDark: '#007BC2',
+              line: '#3B4552',
+              muted: '#AAB4C0'
+            }
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif']
+          },
+          boxShadow: {
+            electric: '0 0 28px rgba(0,163,255,.15)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="bg-industrial-bg font-sans text-white antialiased">
+
+  <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- HEADER -->
+  <header class="site-header sticky top-0 z-50 border-b border-white/10">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+
+      <a href="#inicio" class="flex items-center gap-3" aria-label="Inicio">
+        <!-- Sustituir por el logotipo corporativo -->
+        <img src="assets/brand/logo.svg"
+             alt="Logotipo corporativo"
+             class="h-10 w-auto"
+             onerror="this.style.display='none'; document.getElementById('logo-fallback').classList.remove('hidden')">
+
+        <span id="logo-fallback" class="hidden text-lg font-black uppercase tracking-tight">
+          <span class="text-industrial-blue">INDUSTRIAL</span><br>
+          <span class="text-xs font-semibold tracking-[.25em] text-gray-300">SOLUCIONES TÉCNICAS</span>
+        </span>
+      </a>
+
+      <button id="menu-toggle"
+              class="menu-toggle rounded-md border border-white/15 p-2 md:hidden"
+              aria-label="Abrir menú de navegación"
+              aria-expanded="false"
+              aria-controls="main-navigation">
+        <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none"
+             stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+
+      <nav id="main-navigation" class="main-navigation" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#maquinaria" class="nav-link">Maquinaria</a>
+        <a href="#postventa" class="nav-link">Postventa</a>
+        <a href="#contacto" class="nav-link nav-cta">Solicitar cotización <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- HERO -->
+    <section id="inicio" class="hero-section relative isolate overflow-hidden">
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="mx-auto grid min-h-[660px] max-w-7xl items-center gap-12 px-5 py-20 md:py-24 lg:grid-cols-2 lg:px-8">
+
+        <div class="hero-copy relative z-10">
+          <div class="mb-7 flex items-center gap-3">
+            <span class="h-px w-10 bg-industrial-blue"></span>
+            <p class="text-xs font-bold uppercase tracking-[.24em] text-industrial-blue">
+              Ingeniería · Equipamiento · Respaldo
+            </p>
+          </div>
+
+          <h1 class="max-w-3xl text-4xl font-black uppercase leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl">
+            POTENCIA INDUSTRIAL,
+            <span class="text-industrial-blue">PRECISIÓN VEHICULAR.</span>
+          </h1>
+
+          <p class="mt-7 max-w-xl text-base leading-8 text-gray-300 sm:text-lg">
+            Importación de montacargas, equipamiento automotriz y soporte técnico postventa de alta ingeniería.
+          </p>
+
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a href="#maquinaria" class="btn-primary">
+              Ver catálogo
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="#contacto" class="btn-secondary">
+              Agendar soporte
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="mt-12 grid max-w-xl grid-cols-3 gap-4 border-t border-white/10 pt-7">
+            <div>
+              <p class="text-sm font-extrabold text-white sm:text-base">Importación</p>
+              <p class="mt-1 text-xs leading-5 text-gray-400">Gestión especializada</p>
+            </div>
+            <div>
+              <p class="text-sm font-extrabold text-white sm:text-base">Alta ingeniería</p>
+              <p class="mt-1 text-xs leading-5 text-gray-400">Equipos profesionales</p>
+            </div>
+            <div>
+              <p class="text-sm font-extrabold text-white sm:text-base">Postventa</p>
+              <p class="mt-1 text-xs leading-5 text-gray-400">Respaldo técnico</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen principal: sustituir por hero-bg.webp -->
+        <div class="hero-visual relative min-h-[300px] sm:min-h-[440px]">
+          <div class="hero-image absolute inset-0"
+               role="img"
+               aria-label="Imagen de maquinaria industrial y equipamiento profesional"></div>
+
+          <div class="hero-image-overlay absolute inset-0"></div>
+
+          <div class="absolute bottom-5 left-5 right-5 z-10 border-l-2 border-industrial-blue bg-industrial-bg/90 p-5 backdrop-blur sm:bottom-8 sm:left-8 sm:right-8">
+            <p class="text-xs font-bold uppercase tracking-[.2em] text-industrial-blue">
+              Soluciones para profesionales
+            </p>
+            <p class="mt-2 text-lg font-extrabold uppercase sm:text-xl">
+              Equipamiento que impulsa resultados.
+            </p>
+          </div>
+
+          <div class="absolute right-0 top-0 h-20 w-20 border-r-2 border-t-2 border-industrial-blue/70"></div>
+          <div class="absolute bottom-0 left-0 h-20 w-20 border-b-2 border-l-2 border-industrial-blue/70"></div>
+        </div>
+      </div>
+
+      <div class="hero-bottom-line" aria-hidden="true"></div>
+    </section>
+
+    <!-- MAQUINARIA -->
+    <section id="maquinaria" class="section-space">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+
+        <div class="section-heading mb-12 max-w-3xl">
+          <p class="section-eyebrow">Nuestras especialidades</p>
+          <h2 class="section-title">
+            TECNOLOGÍA PARA <span class="text-industrial-blue">TRABAJAR MÁS.</span>
+          </h2>
+          <p class="mt-5 max-w-2xl leading-7 text-gray-300">
+            Equipamiento profesional para operaciones industriales y talleres que exigen precisión, rendimiento y respaldo especializado.
+          </p>
+        </div>
+
+        <div class="grid gap-7 lg:grid-cols-2">
+
+          <!-- PILAR A -->
+          <article class="machine-card group">
+            <div class="machine-image machine-image-forklift">
+              <img src="assets/images/montacargas.webp"
+                   alt="Montacargas industrial para operaciones de carga y logística"
+                   loading="lazy"
+                   onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')">
+              <span class="image-index">01 / 02</span>
+              <span class="image-label">LÍNEA INDUSTRIAL</span>
+            </div>
+
+            <div class="p-6 sm:p-8">
+              <p class="mb-3 text-xs font-bold uppercase tracking-[.2em] text-industrial-blue">
+                Manipulación de carga
+              </p>
+              <h3 class="text-2xl font-extrabold uppercase leading-tight sm:text-3xl">
+                Montacargas industriales
+              </h3>
+              <p class="mt-4 leading-7 text-gray-300">
+                Equipos para elevar, mover y gestionar cargas con eficiencia en almacenes, centros logísticos y operaciones industriales.
+              </p>
+
+              <ul class="mt-6 space-y-3 text-sm text-gray-200">
+                <li class="feature-item">Importación directa bajo pedido</li>
+                <li class="feature-item">Alternativas según capacidad y aplicación</li>
+                <li class="feature-item">Asesoramiento sobre selección y disponibilidad</li>
+              </ul>
+
+              <a href="#contacto"
+                 class="card-link mt-8"
+                 data-interest="Compra de Montacargas Industriales">
+                Consultar montacargas <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- PILAR B -->
+          <article class="machine-card group">
+            <div class="machine-image machine-image-automotive">
+              <img src="assets/images/maq-vehicular.webp"
+                   alt="Maquinaria profesional para equipamiento de talleres vehiculares"
+                   loading="lazy"
+                   onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')">
+              <span class="image-index">02 / 02</span>
+              <span class="image-label">LÍNEA AUTOMOTRIZ</span>
+            </div>
+
+            <div class="p-6 sm:p-8">
+              <p class="mb-3 text-xs font-bold uppercase tracking-[.2em] text-industrial-blue">
+                Equipamiento especializado
+              </p>
+              <h3 class="text-2xl font-extrabold uppercase leading-tight sm:text-3xl">
+                Maquinaria para talleres
+              </h3>
+              <p class="mt-4 leading-7 text-gray-300">
+                Equipamiento técnico para talleres automotrices, centros de servicio y operaciones de mantenimiento profesional.
+              </p>
+
+              <ul class="mt-6 space-y-3 text-sm text-gray-200">
+                <li class="feature-item">Elevadores para vehículos</li>
+                <li class="feature-item">Alineadoras y balanceadoras</li>
+                <li class="feature-item">Equipamiento pesado para uso profesional</li>
+              </ul>
+
+              <a href="#contacto"
+                 class="card-link mt-8"
+                 data-interest="Equipamiento / Maquinaria Vehicular">
+                Consultar equipamiento <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+        <br>
+        <!-- PILAR C -->
+        <article class="machine-card group">
+          <div class="machine-image machine-image-automotive">
+            <img src="assets/images/maq-vehicular.webp"
+                 alt="Maquinaria profesional para equipamiento de talleres vehiculares"
+                 loading="lazy"
+                 onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')">
+            <span class="image-index">02 / 02</span>
+            <span class="image-label">SERVICIO POST-VENTA</span>
+          </div>
+
+          <div class="p-6 sm:p-8">
+            <p class="mb-3 text-xs font-bold uppercase tracking-[.2em] text-industrial-blue">
+              Mantenimiento especializado
+            </p>
+            <h3 class="text-2xl font-extrabold uppercase leading-tight sm:text-3xl">
+              Servicio post-venta
+            </h3>
+            <p class="mt-4 leading-7 text-gray-300">
+              Equipamiento técnico para talleres automotrices, centros de servicio y operaciones de mantenimiento profesional.
+            </p>
+
+            <ul class="mt-6 space-y-3 text-sm text-gray-200">
+              <li class="feature-item">Servicio garantizado</li>
+              <li class="feature-item">Repuestos y lubricantes originales</li>
+              <li class="feature-item">Mecanicos certificados</li>
+            </ul>
+
+            <a href="#contacto"
+               class="card-link mt-8"
+               data-interest="Equipamiento / Maquinaria Vehicular">
+              Consultar servicio <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+
+        <div class="mt-8 flex flex-col justify-between gap-4 border border-white/10 bg-industrial-panel p-6 sm:flex-row sm:items-center sm:p-8">
+          <div>
+            <p class="font-bold uppercase">¿Busca un equipo específico?</p>
+            <p class="mt-2 text-sm leading-6 text-gray-400">
+              Consulte modelos, especificaciones técnicas, disponibilidad y opciones de importación.
+            </p>
+          </div>
+          <a href="#contacto" class="btn-primary shrink-0">
+            Solicitar asesoramiento <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- POSTVENTA -->
+    <section id="postventa" class="section-space postventa-section">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="postventa-panel">
+
+          <div class="grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
+            <div>
+              <p class="section-eyebrow">Más allá de la venta</p>
+              <h2 class="section-title">
+                EL RESPALDO TÉCNICO
+                <span class="text-industrial-blue">MARCA LA DIFERENCIA.</span>
+              </h2>
+              <p class="mt-5 leading-7 text-gray-300">
+                Una operación eficiente necesita equipos adecuados, mantenimiento planificado y acceso a repuestos. Acompañamos a nuestros clientes con soluciones técnicas orientadas a la continuidad operativa.
+              </p>
+
+              <a href="#contacto"
+                 class="btn-primary mt-8"
+                 data-interest="Servicio Técnico Postventa">
+                Solicitar servicio técnico <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+
+              <article class="service-card">
+                <div class="service-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                       stroke-width="1.7">
+                    <path d="M12 3 20 6v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-3Z"/>
+                    <path d="m8.5 12 2.3 2.3 4.8-5"/>
+                  </svg>
+                </div>
+                <h3>Soporte técnico</h3>
+                <p>Orientación especializada para diagnóstico, incidencias y asistencia posventa. Consulte disponibilidad de atención y cobertura.</p>
+              </article>
+
+              <article class="service-card">
+                <div class="service-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                       stroke-width="1.7">
+                    <path d="M14 6.5a5 5 0 0 0-6.5 6.5L3 17.5 6.5 21l4.5-4.5a5 5 0 0 0 6.5-6.5l-3 3-3-3 2.5-3.5Z"/>
+                    <path d="m15 4 5 5"/>
+                  </svg>
+                </div>
+                <h3>Repuestos originales</h3>
+                <p>Gestión de importación de repuestos específicos, con identificación de piezas según marca, modelo y número de parte.</p>
+              </article>
+
+              <article class="service-card sm:col-span-2">
+                <div class="service-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                       stroke-width="1.7">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 7v5l3.5 2"/>
+                    <path d="M5 3 3 5M19 3l2 2"/>
+                  </svg>
+                </div>
+                <h3>Mantenimiento preventivo</h3>
+                <p>Planificación de revisiones y mantenimiento según el equipo y las recomendaciones técnicas correspondientes, para contribuir a la continuidad de las operaciones.</p>
+              </article>
+
+            </div>
+          </div>
+
+          <div class="postventa-footer">
+            <span class="h-px flex-1 bg-white/10"></span>
+            <p>PRODUCTIVIDAD · CONFIABILIDAD · RESPALDO</p>
+            <span class="h-px flex-1 bg-white/10"></span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section-space contact-section">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+
+        <div class="grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:items-start">
+
+          <div class="contact-copy lg:sticky lg:top-28">
+            <p class="section-eyebrow">Contacto comercial</p>
+            <h2 class="section-title">
+              SU PRÓXIMO PROYECTO
+              <span class="text-industrial-blue">EMPIEZA AQUÍ.</span>
+            </h2>
+            <p class="mt-5 max-w-lg leading-7 text-gray-300">
+              Cuéntenos qué equipo necesita o qué desafío técnico desea resolver. Nuestro equipo podrá orientarle sobre el siguiente paso.
+            </p>
+
+            <div class="mt-9 space-y-5">
+              <div class="contact-detail">
+                <span class="contact-detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                       stroke-width="1.7">
+                    <rect x="3" y="5" width="18" height="14" rx="1"/>
+                    <path d="m3 7 9 6 9-6"/>
+                  </svg>
+                </span>
+                <div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400">Correo corporativo</p>
+                  <a id="contact-email-link" href="mailto:ventas@tuempresa.com"
+                     class="mt-1 inline-block break-all font-semibold hover:text-industrial-blue">
+                    ventas@tuempresa.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <span class="contact-detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                       stroke-width="1.7">
+                    <path d="M21 16.5v3a2 2 0 0 1-2.2 2 19.5 19.5 0 0 1-8.5-3 19 19 0 0 1-5.8-5.8 19.5 19.5 0 0 1-3-8.6A2 2 0 0 1 3.5 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L7.4 10a16 16 0 0 0 6.6 6.6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/>
+                  </svg>
+                </span>
+                <div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400">Atención directa</p>
+                  <a id="contact-phone-link" href="https://wa.me/59170000000"
+                     target="_blank" rel="noopener noreferrer"
+                     class="mt-1 inline-block font-semibold hover:text-industrial-blue">
+                    Consultar por WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-9 border-l-2 border-industrial-blue bg-white/[.03] p-5">
+              <p class="text-sm font-bold uppercase">Atención personalizada</p>
+              <p class="mt-2 text-sm leading-6 text-gray-400">
+                Comparta el tipo de maquinaria, sus requerimientos y los datos necesarios para evaluar su consulta.
+              </p>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <div class="contact-form-panel">
+            <div class="mb-8 border-b border-white/10 pb-6">
+              <p class="text-xs font-bold uppercase tracking-[.2em] text-industrial-blue">
+                Solicitud comercial
+              </p>
+              <h3 class="mt-3 text-2xl font-extrabold uppercase sm:text-3xl">
+                HABLEMOS DE SU PROYECTO.
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-gray-400">
+                Complete los campos y continúe su consulta por WhatsApp.
+              </p>
+            </div>
+
+            <form id="contact-form" novalidate>
+              <div class="grid gap-5 sm:grid-cols-2">
+
+                <div class="form-field sm:col-span-2">
+                  <label for="full-name">Nombre completo <span aria-hidden="true">*</span></label>
+                  <input id="full-name" name="name" type="text"
+                         autocomplete="name" minlength="2" maxlength="100"
+                         placeholder="Ej. Juan Pérez" required>
+                  <small class="field-error" id="name-error"></small>
+                </div>
+
+                <div class="form-field sm:col-span-2">
+                  <label for="email">Correo electrónico corporativo <span aria-hidden="true">*</span></label>
+                  <input id="email" name="email" type="email"
+                         autocomplete="email" maxlength="150"
+                         placeholder="nombre@empresa.com" required>
+                  <small class="field-error" id="email-error"></small>
+                </div>
+
+                <div class="form-field sm:col-span-2">
+                  <label for="phone">Teléfono de contacto <span aria-hidden="true">*</span></label>
+                  <div class="phone-input">
+                    <span aria-hidden="true">+</span>
+                    <input id="phone" name="phone" type="tel"
+                           autocomplete="tel" maxlength="25"
+                           placeholder="591 70207287" required>
+                  </div>
+                  <small class="field-hint">Incluya el código de país, por ejemplo +591 para Bolivia.</small>
+                  <small class="field-error" id="phone-error"></small>
+                </div>
+
+                <div class="form-field sm:col-span-2">
+                  <label for="interest">Tipo de producto o servicio de interés <span aria-hidden="true">*</span></label>
+                  <select id="interest" name="interest" required>
+                    <option value="" selected disabled>Seleccione una opción</option>
+                    <option value="Compra de Montacargas Industriales">Compra de Montacargas Industriales</option>
+                    <option value="Equipamiento / Maquinaria Vehicular">Equipamiento / Maquinaria Vehicular</option>
+                    <option value="Servicio Técnico Postventa">Servicio Técnico Postventa</option>
+                    <option value="Importación de Repuestos Específicos">Importación de Repuestos Específicos</option>
+                  </select>
+                  <small class="field-error" id="interest-error"></small>
+                </div>
+
+                <div class="form-field sm:col-span-2">
+                  <label for="details">Detalles adicionales <span class="optional-label">(opcional)</span></label>
+                  <textarea id="details" name="details" rows="3" maxlength="1000"
+                            placeholder="Modelo, capacidad, marca, número de parte o requerimiento técnico..."></textarea>
+                </div>
+
+              </div>
+
+              <div class="mt-6">
+                <label class="consent-label">
+                  <input id="consent" name="consent" type="checkbox" required>
+                  <span>Autorizo el uso de estos datos para atender mi consulta comercial. <span aria-hidden="true">*</span></span>
+                </label>
+                <small class="field-error" id="consent-error"></small>
+              </div>
+
+              <div class="mt-7 space-y-3">
+                <button id="whatsapp-submit" type="submit" class="btn-whatsapp w-full">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                       stroke-width="1.8" class="h-5 w-5" aria-hidden="true">
+                    <path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.6A8.5 8.5 0 1 1 20.5 11.5Z"/>
+                    <path d="M8.5 8.2c.2-.5.4-.5.7-.5h.5c.2 0 .3.1.4.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.2.2-.2.4 0 .6.5.9 1.2 1.6 2.1 2.1.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.2.1.3.3.3.5 0 .4-.2 1-.6 1.3-.4.4-1.1.7-1.8.6-1-.1-2.4-.7-3.8-1.9-1.2-1-2-2.4-2.2-3.4-.2-1 .3-1.9.8-2.4Z"/>
+                  </svg>
+                  Enviar por WhatsApp
+                  <span aria-hidden="true">↗</span>
+                </button>
+
+                <a id="email-submit" href="mailto:ventas@tuempresa.com"
+                   class="btn-email w-full">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                       stroke-width="1.7" class="h-5 w-5" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="1"/>
+                    <path d="m3 7 9 6 9-6"/>
+                  </svg>
+                  Consultar por correo
+                </a>
+              </div>
+
+              <p id="form-status" class="mt-4 text-sm leading-6"
+                 role="status" aria-live="polite"></p>
+
+              <p class="mt-4 text-center text-xs leading-5 text-gray-500">
+                WhatsApp abrirá una conversación con el mensaje preparado. Deberá confirmar su envío desde la aplicación.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 bg-[#191C22]">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 px-5 py-8 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <a href="#inicio" class="text-sm font-black uppercase tracking-tight">
+        <span class="text-industrial-blue">INDUSTRIAL</span> SOLUCIONES
+      </a>
+
+      <p class="text-xs leading-6 text-gray-500">
+        © <span id="current-year"></span> Todos los derechos reservados.
+      </p>
+
+      <a href="#inicio" class="text-sm font-semibold text-gray-300 transition hover:text-industrial-blue">
+        Volver arriba ↑
+      </a>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a id="whatsapp-float"
+     href="https://wa.me/5917027287"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="whatsapp-float"
+     aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="1.8" aria-hidden="true">
+      <path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.6A8.5 8.5 0 1 1 20.5 11.5Z"/>
+      <path d="M8.5 8.2c.2-.5.4-.5.7-.5h.5c.2 0 .3.1.4.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.2.2-.2.4 0 .6.5.9 1.2 1.6 2.1 2.1.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.2.1.3.3.3.5 0 .4-.2 1-.6 1.3-.4.4-1.1.7-1.8.6-1-.1-2.4-.7-3.8-1.9-1.2-1-2-2.4-2.2-3.4-.2-1 .3-1.9.8-2.4Z"/>
+    </svg>
+  </a>
+
+</body>
+</html>

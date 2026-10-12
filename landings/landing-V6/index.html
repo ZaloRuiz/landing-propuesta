@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#18181b">
+  <meta
+    name="description"
+    content="Montacargas de alto rendimiento, equipamiento para talleres industriales, repuestos originales y soporte técnico de emergencia."
+  >
+  <title>Potencia Industrial | Equipos y Soporte 24/7</title>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700;1,800&family=Roboto:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Tailwind CDN para desarrollo. Compilarlo para producción. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["Kanit", "sans-serif"],
+            body: ["Roboto", "sans-serif"]
+          },
+          colors: {
+            action: {
+              DEFAULT: "#F4510B",
+              hover: "#D83E00"
+            },
+            carbon: "#18181B"
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="bg-white font-body text-zinc-900 antialiased">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- Barra de disponibilidad -->
+  <div class="availability-bar">
+    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-3 gap-y-1 px-4 py-2 sm:justify-between sm:px-6 lg:px-8">
+      <p class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider">
+        <span class="availability-dot" aria-hidden="true"></span>
+        Soporte operativo y atención prioritaria
+      </p>
+      <a href="#contacto" class="text-xs font-bold uppercase tracking-wider underline underline-offset-4">
+        Solicitar asistencia <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Navegación -->
+  <header class="site-header">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+      <a href="#inicio" class="brand" aria-label="Potencia Industrial, inicio">
+        <!-- Reemplazar por el logotipo real -->
+        <img
+          src="assets/brand/logo.svg"
+          alt=""
+          class="brand-logo"
+          onerror="this.hidden=true; this.nextElementSibling.hidden=false"
+        >
+        <span class="brand-fallback" hidden aria-hidden="true">PI<span>.</span></span>
+        <span class="brand-copy">
+          <strong>POTENCIA</strong>
+          <span>INDUSTRIAL</span>
+        </span>
+      </a>
+
+      <button
+        id="menu-toggle"
+        class="menu-toggle"
+        type="button"
+        aria-controls="main-navigation"
+        aria-expanded="false"
+        aria-label="Abrir menú"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-navigation" class="main-navigation" aria-label="Navegación principal">
+        <a href="#maquinaria" class="nav-link">Maquinaria</a>
+        <a href="#soporte" class="nav-link">Soporte 24/7</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+        <a href="#contacto" class="nav-cta">Cotizar ahora <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- Hero -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-background" role="img" aria-label="Montacargas trabajando en un centro logístico industrial durante el día"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-grid-pattern" aria-hidden="true"></div>
+
+      <div class="relative z-10 mx-auto grid min-h-[590px] max-w-7xl items-center gap-10 px-4 py-20 sm:px-6 md:min-h-[660px] lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-24">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">
+            <span class="hero-eyebrow-line"></span>
+            Fuerza industrial. Respuesta inmediata.
+          </p>
+
+          <h1 class="hero-title">
+            OPERACIÓN CONTINUA.
+            <span>MAQUINARIA IMPLACABLE.</span>
+          </h1>
+
+          <p class="hero-description">
+            Importación exprés de montacargas de alto tonelaje,
+            equipamiento vehicular pesado y servicio técnico
+            postventa de emergencia 24/7.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="#contacto" class="btn-action">
+              Cotizar equipos ahora <span aria-hidden="true">↗</span>
+            </a>
+            <a href="#contacto" class="btn-hero-outline" data-priority="Requerir Soporte Técnico de Emergencia">
+              <span class="urgent-icon" aria-hidden="true">!</span>
+              Soporte técnico de emergencia
+            </a>
+          </div>
+
+          <div class="hero-proof">
+            <div class="proof-item">
+              <span class="proof-symbol" aria-hidden="true">01</span>
+              <span>Equipamiento industrial</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-symbol" aria-hidden="true">02</span>
+              <span>Soporte especializado</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-symbol" aria-hidden="true">03</span>
+              <span>Repuestos originales</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-side-panel" aria-label="Atención prioritaria">
+          <div class="panel-topline">
+            <span class="panel-indicator"></span>
+            ATENCIÓN OPERATIVA
+          </div>
+          <p class="panel-label">¿Tu operación no puede esperar?</p>
+          <h2>ACTIVAMOS LA RESPUESTA.</h2>
+          <p class="panel-description">
+            Cuéntanos qué equipo necesitas o qué incidencia está afectando tu operación.
+          </p>
+          <a href="#contacto" class="panel-link">
+            Informar requerimiento <span aria-hidden="true">→</span>
+          </a>
+          <div class="panel-watermark" aria-hidden="true">24/7</div>
+        </aside>
+      </div>
+
+      <div class="hero-cut" aria-hidden="true"></div>
+    </section>
+
+    <!-- Franja de propuesta de valor -->
+    <section class="value-strip" aria-label="Ventajas operativas">
+      <div class="mx-auto grid max-w-7xl grid-cols-1 sm:grid-cols-3">
+        <div class="value-item">
+          <span class="value-number">01 /</span>
+          <div>
+            <h2>CAPACIDAD</h2>
+            <p>Equipos para trabajo exigente</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <span class="value-number">02 /</span>
+          <div>
+            <h2>DISPONIBILIDAD</h2>
+            <p>Gestión prioritaria de solicitudes</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <span class="value-number">03 /</span>
+          <div>
+            <h2>CONTINUIDAD</h2>
+            <p>Soporte y mantenimiento especializado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Maquinaria -->
+    <section id="maquinaria" class="section-padding machinery-section">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="section-heading">
+          <div>
+            <p class="section-eyebrow">Soluciones para operaciones exigentes</p>
+            <h2 class="section-title">DOS MOTORES.<br><span>UNA OPERACIÓN MÁS FUERTE.</span></h2>
+          </div>
+          <p class="section-intro">
+            Equipamiento seleccionado para elevar la capacidad de trabajo,
+            mejorar la eficiencia y responder a las exigencias de cada operación.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-7 lg:grid-cols-2">
+          <!-- Tarjeta 1 -->
+          <article class="equipment-card">
+            <div class="equipment-media">
+              <!-- Reemplazar con assets/images/montacargas-alto-rendimiento.webp -->
+              <img
+                src="assets/images/montacargas-alto-rendimiento.webp"
+                alt="Montacargas industrial de alto rendimiento"
+                loading="lazy"
+                onerror="this.hidden=true; this.nextElementSibling.hidden=false"
+              >
+              <div class="image-fallback" hidden aria-hidden="true">
+                <span>MONTACARGAS</span>
+                <strong>ALTO RENDIMIENTO</strong>
+              </div>
+              <span class="equipment-badge">ALTO RENDIMIENTO</span>
+              <span class="equipment-index">01</span>
+            </div>
+
+            <div class="equipment-body">
+              <p class="equipment-kicker">LOGÍSTICA · CARGA · ALMACENAJE</p>
+              <h3>Montacargas de alto rendimiento</h3>
+              <p class="equipment-description">
+                Soluciones para manipulación de carga en almacenes, centros logísticos,
+                industrias y operaciones de alta exigencia.
+              </p>
+
+              <ul class="equipment-features">
+                <li><span aria-hidden="true">✓</span> Configuraciones para diferentes capacidades de carga</li>
+                <li><span aria-hidden="true">✓</span> Gestión de disponibilidad e importación</li>
+                <li><span aria-hidden="true">✓</span> Orientación técnica para selección del equipo</li>
+              </ul>
+
+              <div class="equipment-bottom">
+                <span class="feature-tag">Venta e importación</span>
+                <a href="#contacto" class="equipment-link" data-priority="Adquirir Montacargas (Venta/Importación)">
+                  Consultar disponibilidad <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta 2 -->
+          <article class="equipment-card">
+            <div class="equipment-media">
+              <!-- Reemplazar con assets/images/equipamiento-taller-industrial.webp -->
+              <img
+                src="assets/images/equipamiento-taller-industrial.webp"
+                alt="Equipamiento pesado para un taller automotriz industrial"
+                loading="lazy"
+                onerror="this.hidden=true; this.nextElementSibling.hidden=false"
+              >
+              <div class="image-fallback" hidden aria-hidden="true">
+                <span>EQUIPAMIENTO</span>
+                <strong>INFRAESTRUCTURA VEHICULAR</strong>
+              </div>
+              <span class="equipment-badge">EQUIPAMIENTO TÉCNICO</span>
+              <span class="equipment-index">02</span>
+            </div>
+
+            <div class="equipment-body">
+              <p class="equipment-kicker">TALLERES · SERVICIO PESADO · INDUSTRIA</p>
+              <h3>Maquinaria funcional vehicular</h3>
+              <p class="equipment-description">
+                Equipos para instalar, ampliar o modernizar talleres de servicio
+                automotriz y centros de mantenimiento industrial.
+              </p>
+
+              <ul class="equipment-features">
+                <li><span aria-hidden="true">✓</span> Elevadores y rampas para vehículos</li>
+                <li><span aria-hidden="true">✓</span> Desmontadoras y equipamiento de ruedas</li>
+                <li><span aria-hidden="true">✓</span> Soluciones según el espacio y tipo de operación</li>
+              </ul>
+
+              <div class="equipment-bottom">
+                <span class="feature-tag">Soluciones para talleres</span>
+                <a href="#contacto" class="equipment-link" data-priority="Equipar Taller Vehicular / Industrial">
+                  Cotizar equipamiento <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="catalogue-note">
+          <span aria-hidden="true">i</span>
+          Las capacidades, configuraciones, plazos de entrega y condiciones de garantía
+          se confirman de acuerdo con cada equipo y cotización.
+        </p>
+      </div>
+    </section>
+
+    <!-- Postventa y repuestos -->
+    <section id="soporte" class="support-section">
+      <div class="support-angle" aria-hidden="true"></div>
+
+      <div class="relative z-10 mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+        <div class="support-heading">
+          <p class="section-eyebrow section-eyebrow-light">
+            Cuando cada minuto cuenta
+          </p>
+          <h2 class="section-title section-title-light">
+            TU OPERACIÓN NO<br>
+            <span>ESTÁ PARA DETENERSE.</span>
+          </h2>
+          <p>
+            Coordinamos atención técnica y requerimientos de repuestos para ayudar
+            a reducir interrupciones y recuperar la continuidad operativa.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-5 md:grid-cols-3">
+          <article class="support-card">
+            <div class="support-card-top">
+              <span class="support-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                  <circle cx="12" cy="12" r="5"/>
+                </svg>
+              </span>
+              <span class="support-number">01</span>
+            </div>
+            <h3>Asistencia técnica 24/7</h3>
+            <p>
+              Coordinación de soporte en sitio y orientación técnica para atender
+              incidencias que afectan tu operación.
+            </p>
+            <a href="#contacto" data-priority="Requerir Soporte Técnico de Emergencia">
+              Solicitar asistencia <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="support-card">
+            <div class="support-card-top">
+              <span class="support-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter">
+                  <path d="M14 7 17 4l3 3-3 3M4 20l9-9M8 4H4v4M20 16v4h-4"/>
+                  <path d="m7 17 10-10"/>
+                </svg>
+              </span>
+              <span class="support-number">02</span>
+            </div>
+            <h3>Repuestos originales importados</h3>
+            <p>
+              Gestión de piezas críticas y alternativas logísticas de importación,
+              sujetas a disponibilidad y plazo del proveedor.
+            </p>
+            <a href="#contacto" data-priority="Solicitar Repuesto Crítico">
+              Consultar repuestos <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="support-card">
+            <div class="support-card-top">
+              <span class="support-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter">
+                  <path d="M14.7 6.3a5 5 0 0 0-6.4 6.4L3 18l3 3 5.3-5.3a5 5 0 0 0 6.4-6.4L14 13l-3-3 3.7-3.7Z"/>
+                  <path d="m16 4 4 4"/>
+                </svg>
+              </span>
+              <span class="support-number">03</span>
+            </div>
+            <h3>Mantenimiento express certificado</h3>
+            <p>
+              Planificación de intervenciones preventivas y correctivas según
+              el equipo, la falla y la disponibilidad del personal técnico.
+            </p>
+            <a href="#contacto" data-priority="Requerir Soporte Técnico de Emergencia">
+              Coordinar mantenimiento <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        </div>
+
+        <div class="support-bottom">
+          <span class="support-bottom-mark" aria-hidden="true">!</span>
+          <p>
+            <strong>¿Una incidencia está afectando tu operación?</strong>
+            Envía tu requerimiento con los datos de contacto y el equipo involucrado.
+          </p>
+          <a href="#contacto" class="btn-action">Activar solicitud <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact-section section-padding">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="contact-heading">
+          <p class="section-eyebrow">Contacto directo · Respuesta prioritaria</p>
+          <h2 class="section-title">DANOS LOS DATOS.<br><span>ACTIVAMOS EL CONTACTO.</span></h2>
+          <p>
+            Completa los campos esenciales. Prepararemos tu solicitud para enviarla
+            por WhatsApp al equipo de atención.
+          </p>
+        </div>
+
+        <div class="contact-layout mt-10">
+          <div class="contact-form-wrap">
+            <div class="form-topline">
+              <span>FORMULARIO DE ATENCIÓN</span>
+              <span class="form-status-indicator"><span></span> SOLICITUD DIRECTA</span>
+            </div>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="contact-name">Nombre del solicitante <span>*</span></label>
+                  <input
+                    id="contact-name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    maxlength="100"
+                    placeholder="Nombre y apellido"
+                    aria-describedby="name-error"
+                    required
+                  >
+                  <p id="name-error" class="field-error"></p>
+                </div>
+
+                <div class="form-field">
+                  <label for="company">Empresa o negocio <span>*</span></label>
+                  <input
+                    id="company"
+                    name="company"
+                    type="text"
+                    autocomplete="organization"
+                    maxlength="150"
+                    placeholder="Razón social"
+                    aria-describedby="company-error"
+                    required
+                  >
+                  <p id="company-error" class="field-error"></p>
+                </div>
+
+                <div class="form-field form-field-highlight">
+                  <label for="phone">Teléfono / WhatsApp <span>*</span></label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    inputmode="tel"
+                    autocomplete="tel"
+                    maxlength="30"
+                    placeholder="+591 70000000"
+                    aria-describedby="phone-error"
+                    required
+                  >
+                  <p class="field-hint">Incluye el código de país si corresponde.</p>
+                  <p id="phone-error" class="field-error"></p>
+                </div>
+
+                <div class="form-field">
+                  <label for="email">Correo electrónico <span>*</span></label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    maxlength="150"
+                    placeholder="nombre@empresa.com"
+                    aria-describedby="email-error"
+                    required
+                  >
+                  <p id="email-error" class="field-error"></p>
+                </div>
+
+                <div class="form-field form-field-full">
+                  <label for="priority">¿Cuál es tu prioridad actual? <span>*</span></label>
+                  <select id="priority" name="priority" aria-describedby="priority-error" required>
+                    <option value="">Selecciona el área de atención</option>
+                    <option value="Adquirir Montacargas (Venta/Importación)">Adquirir Montacargas (Venta/Importación)</option>
+                    <option value="Equipar Taller Vehicular / Industrial">Equipar Taller Vehicular / Industrial</option>
+                    <option value="Requerir Soporte Técnico de Emergencia">Requerir Soporte Técnico de Emergencia</option>
+                    <option value="Solicitar Repuesto Crítico">Solicitar Repuesto Crítico</option>
+                  </select>
+                  <p id="priority-error" class="field-error"></p>
+                </div>
+
+                <div class="form-field form-field-full">
+                  <label for="details">Detalle breve <span class="optional-label">(opcional)</span></label>
+                  <textarea
+                    id="details"
+                    name="details"
+                    rows="3"
+                    maxlength="600"
+                    placeholder="Equipo, ubicación o descripción de la necesidad..."
+                  ></textarea>
+                </div>
+
+                <div class="form-field form-field-full">
+                  <label class="consent-label" for="consent">
+                    <input id="consent" name="consent" type="checkbox" required>
+                    <span>Autorizo el uso de estos datos para gestionar y responder a mi solicitud.</span>
+                  </label>
+                  <p id="consent-error" class="field-error"></p>
+                </div>
+              </div>
+
+              <button id="whatsapp-submit" type="submit" class="btn-submit">
+                Solicitar contacto inmediato <span aria-hidden="true">↗</span>
+              </button>
+              <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+              <p class="form-footnote">
+                Al continuar, se abrirá WhatsApp con el mensaje preparado.
+                Deberás confirmar su envío en la aplicación.
+              </p>
+            </form>
+          </div>
+
+          <aside class="contact-aside">
+            <div class="aside-header">
+              <span class="aside-icon" aria-hidden="true">!</span>
+              <p>ATENCIÓN PRIORITARIA</p>
+            </div>
+            <h3>¿NECESITAS<br>UNA RESPUESTA<br><span>AHORA?</span></h3>
+            <p class="aside-description">
+              Utiliza un canal directo para comunicar tu requerimiento.
+              Si se trata de una emergencia operativa, indica el tipo de equipo
+              y tu ubicación al contactar.
+            </p>
+
+            <a id="whatsapp-contact" href="https://wa.me/59170207287" class="channel-button channel-whatsapp" target="_blank" rel="noopener noreferrer">
+              <span class="channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.2A8.4 8.4 0 1 1 21 11.5Z"/>
+                  <path d="M8.5 8.5c.5 2.4 2 3.9 4.4 4.5l1.2-1.2 2 .9-.2 1.8c-.1.5-.6.8-1.1.8-4.6-.5-7.7-3.6-8.2-8.2 0-.5.3-1 .8-1.1l1.8-.2.9 2-1.6.7Z"/>
+                </svg>
+              </span>
+              <span><strong>WhatsApp directo</strong><small>Enviar mensaje de atención</small></span>
+              <span class="channel-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a id="phone-contact" href="tel:+59170207287" class="channel-button channel-phone">
+              <span class="channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.5 3.2a2 2 0 0 1-.6 1.7L7.1 10.5a16 16 0 0 0 6.4 6.4l1.9-1.9a2 2 0 0 1 1.7-.6l3.2.5a2 2 0 0 1 1.7 2Z"/>
+                </svg>
+              </span>
+              <span><strong>Llamar a soporte</strong><small>Contacto telefónico directo</small></span>
+              <span class="channel-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <div class="aside-bottom-note">
+              <span aria-hidden="true">◆</span>
+              <p>La disponibilidad, cobertura y tiempos de respuesta se confirman con el equipo de atención.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie -->
+  <footer class="site-footer">
+    <div class="mx-auto flex max-w-7xl flex-col gap-5 px-4 py-7 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+      <a href="#inicio" class="footer-brand">
+        <span class="footer-brand-mark">PI<span>.</span></span>
+        <span><strong>POTENCIA INDUSTRIAL</strong><small>MAQUINARIA · EQUIPAMIENTO · SOPORTE</small></span>
+      </a>
+      <p class="footer-copy">© <span id="current-year"></span> Potencia Industrial. Todos los derechos reservados.</p>
+      <a href="#contacto" class="footer-contact">Contactar al equipo <span aria-hidden="true">↗</span></a>
+    </div>
+  </footer>
+</body>
+</html>

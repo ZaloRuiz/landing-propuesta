@@ -1,0 +1,630 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102D50">
+
+  <title>Maquinaria Industrial y Equipamiento Vehicular | Soluciones Corporativas</title>
+  <meta name="description" content="Importación de montacargas, maquinaria para talleres vehiculares, soporte técnico especializado, mantenimiento preventivo y repuestos originales. Solicite una cotización corporativa.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN para desarrollo. Compilar antes de publicar. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            corporate: {
+              navy: '#102D50',
+              navyDark: '#0B2039',
+              blue: '#244B73',
+              yellow: '#F5B820',
+              yellowHover: '#DFA20A',
+              concrete: '#F3F5F7',
+              line: '#D6DCE3',
+              text: '#263445',
+              muted: '#657386'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'Arial', 'sans-serif'],
+            heading: ['Oswald', 'Arial Narrow', 'sans-serif']
+          },
+          boxShadow: {
+            corporate: '0 8px 24px rgba(16,45,80,0.08)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="bg-white font-sans text-corporate-text antialiased">
+
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- Franja institucional -->
+  <div class="topbar hidden sm:block">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-2 lg:px-8">
+      <p>MAQUINARIA INDUSTRIAL · EQUIPAMIENTO VEHICULAR · SERVICIO TÉCNICO</p>
+      <p>Soluciones para operaciones profesionales</p>
+    </div>
+  </div>
+
+  <!-- Cabecera -->
+  <header class="site-header sticky top-0 z-50 border-b border-corporate-line bg-white">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-8">
+
+      <a href="#inicio" class="brand" aria-label="Inicio">
+        <img
+          src="assets/brand/logo.svg"
+          alt="Logotipo de la empresa"
+          class="brand-logo"
+          onerror="this.style.display='none'; document.getElementById('brand-fallback').classList.remove('hidden')"
+        >
+
+        <span id="brand-fallback" class="hidden">
+          <span class="brand-name">SOLUCIONES INDUSTRIALES</span>
+          <span class="brand-caption">MAQUINARIA Y SERVICIO TÉCNICO</span>
+        </span>
+      </a>
+
+      <button
+        id="menu-toggle"
+        type="button"
+        class="menu-toggle md:hidden"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+
+      <nav id="main-navigation" class="main-navigation" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#maquinaria" class="nav-link">Maquinaria</a>
+        <a href="#respaldo" class="nav-link">Servicio técnico</a>
+        <a href="#contacto" class="nav-link nav-link-cta">Solicitar cotización</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- HERO -->
+    <section id="inicio" class="hero-section">
+      <!-- Imagen principal: assets/images/hero-bg.webp -->
+      <div class="hero-background" role="img"
+           aria-label="Montacargas industrial trabajando en una instalación profesional">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="relative mx-auto grid min-h-[570px] max-w-7xl items-center px-5 py-20 lg:px-8">
+        <div class="hero-content max-w-3xl">
+
+          <div class="hero-kicker">
+            <span></span>
+            SOLUCIONES INDUSTRIALES PARA EMPRESAS
+          </div>
+
+          <h1 class="hero-title">
+            SOLIDEZ, GARANTÍA Y
+            <span>RESPALDO INDUSTRIAL.</span>
+          </h1>
+
+          <p class="hero-description">
+            Importación directa de montacargas, equipamiento vehicular para talleres y soporte técnico postventa certificado con repuestos originales.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a href="#contacto" class="btn-safety">
+              Solicitar cotización corporativa
+              <span aria-hidden="true">→</span>
+            </a>
+
+            <a href="#maquinaria" class="btn-outline-light">
+              Ver ficha técnica
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div>
+              <strong>01</strong>
+              <span>Importación especializada</span>
+            </div>
+            <div>
+              <strong>02</strong>
+              <span>Equipamiento profesional</span>
+            </div>
+            <div>
+              <strong>03</strong>
+              <span>Respaldo postventa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bottom-bar" aria-hidden="true"></div>
+    </section>
+
+    <!-- PRESENTACIÓN COMERCIAL -->
+    <section class="intro-strip">
+      <div class="mx-auto grid max-w-7xl gap-5 px-5 py-8 md:grid-cols-3 lg:px-8">
+        <div class="intro-item">
+          <span class="intro-number">01</span>
+          <div>
+            <h2>Importación de maquinaria</h2>
+            <p>Gestión de equipos según las necesidades de su operación.</p>
+          </div>
+        </div>
+
+        <div class="intro-item">
+          <span class="intro-number">02</span>
+          <div>
+            <h2>Asesoramiento técnico</h2>
+            <p>Orientación para seleccionar el equipo adecuado.</p>
+          </div>
+        </div>
+
+        <div class="intro-item">
+          <span class="intro-number">03</span>
+          <div>
+            <h2>Continuidad operativa</h2>
+            <p>Opciones de mantenimiento y repuestos para sus equipos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAQUINARIA -->
+    <section id="maquinaria" class="section-space">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+
+        <div class="section-heading">
+          <p class="eyebrow">Portafolio comercial</p>
+          <h2 class="section-title">
+            MAQUINARIA PARA <span>OPERACIONES EXIGENTES.</span>
+          </h2>
+          <p class="section-description">
+            Soluciones de equipamiento para empresas industriales, centros logísticos, talleres automotrices y servicios técnicos profesionales.
+          </p>
+        </div>
+
+        <div class="grid gap-7 lg:grid-cols-2">
+
+          <!-- PILAR 1 -->
+          <article class="equipment-card">
+            <div class="equipment-image">
+              <img
+                src="assets/images/montacargas.webp"
+                alt="Montacargas industrial para operaciones de carga"
+                loading="lazy"
+                onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+              >
+              <span class="equipment-label">LÍNEA 01 · INDUSTRIAL</span>
+            </div>
+
+            <div class="equipment-content">
+              <p class="equipment-category">LOGÍSTICA Y MANIPULACIÓN DE CARGA</p>
+              <h3>Importación de montacargas industriales</h3>
+              <p class="equipment-description">
+                Equipos para movimiento de materiales y manejo de cargas en instalaciones industriales, almacenes y centros de distribución.
+              </p>
+
+              <div class="specification-heading">CARACTERÍSTICAS A EVALUAR</div>
+              <ul class="specification-list">
+                <li>
+                  <span>Capacidad de carga</span>
+                  <strong>Según modelo</strong>
+                </li>
+                <li>
+                  <span>Tipo de energía</span>
+                  <strong>Según configuración</strong>
+                </li>
+                <li>
+                  <span>Altura de elevación</span>
+                  <strong>Según requerimiento</strong>
+                </li>
+                <li>
+                  <span>Modalidad comercial</span>
+                  <strong>Venta / consulta de leasing</strong>
+                </li>
+                <li>
+                  <span>Disponibilidad</span>
+                  <strong>Confirmación por cotización</strong>
+                </li>
+              </ul>
+
+              <p class="technical-note">
+                Las especificaciones finales dependen del fabricante, el modelo y la configuración solicitada.
+              </p>
+
+              <a href="#contacto"
+                 class="equipment-link"
+                 data-interest="Cotización de Montacargas Industriales">
+                Solicitar cotización de montacargas
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- PILAR 2 -->
+          <article class="equipment-card">
+            <div class="equipment-image">
+              <img
+                src="assets/images/maq-vehicular.webp"
+                alt="Maquinaria de elevación y diagnóstico para talleres vehiculares"
+                loading="lazy"
+                onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+              >
+              <span class="equipment-label">LÍNEA 02 · AUTOMOTRIZ</span>
+            </div>
+
+            <div class="equipment-content">
+              <p class="equipment-category">TALLERES Y CENTROS DE SERVICIO</p>
+              <h3>Maquinaria y equipamiento vehicular</h3>
+              <p class="equipment-description">
+                Equipamiento profesional para mantenimiento, diagnóstico y reparación de vehículos en talleres especializados.
+              </p>
+
+              <div class="specification-heading">EQUIPOS DEL PORTAFOLIO</div>
+              <ul class="specification-list">
+                <li>
+                  <span>Elevadores hidráulicos</span>
+                  <strong>Según capacidad</strong>
+                </li>
+                <li>
+                  <span>Alineadoras</span>
+                  <strong>Según tecnología</strong>
+                </li>
+                <li>
+                  <span>Balanceadoras</span>
+                  <strong>Según aplicación</strong>
+                </li>
+                <li>
+                  <span>Instalación y puesta en marcha</span>
+                  <strong>Consultar alcance</strong>
+                </li>
+                <li>
+                  <span>Repuestos y servicio técnico</span>
+                  <strong>Consultar disponibilidad</strong>
+                </li>
+              </ul>
+
+              <p class="technical-note">
+                La selección del equipo se realiza considerando el tipo de vehículo, la capacidad requerida y las condiciones de instalación.
+              </p>
+
+              <a href="#contacto"
+                 class="equipment-link"
+                 data-interest="Adquisición de Maquinaria Vehicular">
+                Solicitar cotización de maquinaria
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="catalogue-notice">
+          <div>
+            <h3>¿Necesita una configuración específica?</h3>
+            <p>Envíe los requerimientos técnicos de su proyecto para consultar alternativas y disponibilidad.</p>
+          </div>
+          <a href="#contacto" class="btn-safety">
+            Consultar con un asesor <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESPALDO INSTITUCIONAL -->
+    <section id="respaldo" class="support-section">
+      <div class="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+
+        <div class="support-heading">
+          <p class="eyebrow eyebrow-light">Compromiso con su operación</p>
+          <h2 class="section-title">
+            RESPALDO TÉCNICO PARA
+            <span>TRABAJAR CON CONFIANZA.</span>
+          </h2>
+          <p>
+            El valor de la maquinaria también depende de la asistencia, el mantenimiento y la disponibilidad de piezas adecuadas.
+          </p>
+        </div>
+
+        <div class="grid gap-0 md:grid-cols-3">
+
+          <article class="support-card">
+            <div class="support-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                   stroke-width="2" stroke-linecap="square">
+                <path d="M24 5 40 11v11c0 10-6 16-16 21C14 38 8 32 8 22V11L24 5Z"/>
+                <path d="m16 24 5 5 11-12"/>
+              </svg>
+            </div>
+            <span class="support-number">01</span>
+            <h3>Soporte técnico especializado</h3>
+            <p>
+              Asistencia para diagnóstico, mantenimiento y resolución de incidencias, de acuerdo con el equipo y la cobertura contratada.
+            </p>
+          </article>
+
+          <article class="support-card">
+            <div class="support-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                   stroke-width="2" stroke-linecap="square">
+                <circle cx="24" cy="24" r="18"/>
+                <path d="M24 13v12l9 5"/>
+                <path d="M7 7 3 11M41 7l4 4"/>
+              </svg>
+            </div>
+            <span class="support-number">02</span>
+            <h3>Mantenimiento preventivo</h3>
+            <p>
+              Planes de revisión periódica y mantenimiento programado según las recomendaciones técnicas y las necesidades operativas.
+            </p>
+          </article>
+
+          <article class="support-card">
+            <div class="support-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                   stroke-width="2" stroke-linecap="square">
+                <path d="M27 8a13 13 0 0 0-16 16L5 30l13 13 6-6a13 13 0 0 0 16-16l-9 9-8-8 9-9Z"/>
+              </svg>
+            </div>
+            <span class="support-number">03</span>
+            <h3>Importación de repuestos originales</h3>
+            <p>
+              Gestión de piezas de reposición bajo consulta, con identificación por marca, modelo y número de parte.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="support-footer">
+          <div>
+            <p class="support-footer-title">PROTEJA SU INVERSIÓN EN EQUIPAMIENTO.</p>
+            <p class="support-footer-text">Consulte las condiciones de garantía, mantenimiento y provisión de repuestos.</p>
+          </div>
+          <a href="#contacto" class="btn-safety">
+            Consultar servicio postventa <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO B2B -->
+    <section id="contacto" class="section-space contact-section">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+
+        <div class="contact-heading">
+          <p class="eyebrow">Atención corporativa</p>
+          <h2 class="section-title">
+            SOLICITE SU <span>COTIZACIÓN.</span>
+          </h2>
+          <p class="section-description">
+            Complete sus datos empresariales y describa el área de su requerimiento. Nuestro equipo podrá dar seguimiento a su consulta.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+
+          <!-- FORMULARIO -->
+          <div class="contact-form-card">
+            <div class="form-card-heading">
+              <span class="form-reference">SOLICITUD COMERCIAL</span>
+              <h3>Información del solicitante</h3>
+              <p>Los campos marcados con * son obligatorios.</p>
+            </div>
+
+            <form id="contact-form" novalidate>
+
+              <div class="form-grid">
+
+                <div class="form-field">
+                  <label for="contact-name">Nombre del contacto <span>*</span></label>
+                  <input
+                    id="contact-name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    minlength="2"
+                    maxlength="100"
+                    placeholder="Nombre y apellido"
+                    required
+                  >
+                  <small class="field-error" id="name-error"></small>
+                </div>
+
+                <div class="form-field">
+                  <label for="company">Empresa / RIF / NIT <span>*</span></label>
+                  <input
+                    id="company"
+                    name="company"
+                    type="text"
+                    autocomplete="organization"
+                    minlength="2"
+                    maxlength="150"
+                    placeholder="Razón social y NIT/RIF"
+                    required
+                  >
+                  <small class="field-error" id="company-error"></small>
+                </div>
+
+                <div class="form-field">
+                  <label for="email">Correo corporativo <span>*</span></label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    maxlength="150"
+                    placeholder="nombre@empresa.com"
+                    required
+                  >
+                  <small class="field-error" id="email-error"></small>
+                </div>
+
+                <div class="form-field">
+                  <label for="phone">Teléfono de contacto <span>*</span></label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                    maxlength="25"
+                    placeholder="+591 70000000"
+                    required
+                  >
+                  <small class="field-hint">Incluya el código de país.</small>
+                  <small class="field-error" id="phone-error"></small>
+                </div>
+
+                <div class="form-field form-field-full">
+                  <label for="interest">Seleccione el área de su requerimiento <span>*</span></label>
+                  <select id="interest" name="interest" required>
+                    <option value="" selected disabled>Seleccione un área comercial</option>
+                    <option value="Cotización de Montacargas Industriales">Cotización de Montacargas Industriales</option>
+                    <option value="Adquisición de Maquinaria Vehicular">Adquisición de Maquinaria Vehicular</option>
+                    <option value="Soporte Técnico Postventa / Mantenimiento">Soporte Técnico Postventa / Mantenimiento</option>
+                    <option value="Consulta e Importación de Repuestos">Consulta e Importación de Repuestos</option>
+                  </select>
+                  <small class="field-error" id="interest-error"></small>
+                </div>
+
+                <div class="form-field form-field-full">
+                  <label for="details">Descripción del requerimiento</label>
+                  <textarea
+                    id="details"
+                    name="details"
+                    rows="4"
+                    maxlength="1200"
+                    placeholder="Indique modelo, capacidad de carga, marca, número de parte, cantidad o detalles del servicio requerido."
+                  ></textarea>
+                  <small class="field-hint">Opcional. La información técnica ayuda a preparar una respuesta más precisa.</small>
+                </div>
+
+              </div>
+
+              <div class="consent-row">
+                <input id="consent" name="consent" type="checkbox" required>
+                <label for="consent">
+                  Autorizo el uso de mis datos para gestionar y responder esta solicitud comercial. <span>*</span>
+                </label>
+              </div>
+              <small class="field-error" id="consent-error"></small>
+
+              <button id="whatsapp-submit" class="btn-safety btn-submit" type="submit">
+                Enviar solicitud de cotización
+                <span aria-hidden="true">→</span>
+              </button>
+
+              <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+
+              <p class="form-privacy-note">
+                Esta solicitud abrirá WhatsApp con los datos ingresados para que usted revise y confirme el envío.
+              </p>
+            </form>
+          </div>
+
+          <!-- CANALES ALTERNATIVOS -->
+          <aside class="contact-sidebar">
+            <div class="sidebar-heading">
+              <span class="sidebar-mark"></span>
+              <p>CANALES DE ATENCIÓN</p>
+            </div>
+
+            <h3>Atención directa para su empresa.</h3>
+            <p class="sidebar-description">
+              Si necesita realizar una consulta inicial, puede utilizar nuestros canales de contacto corporativo.
+            </p>
+
+            <a id="whatsapp-contact" class="channel-card channel-whatsapp"
+               href="https://wa.me/59170207287"
+               target="_blank" rel="noopener noreferrer">
+              <span class="channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8">
+                  <path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.6A8.5 8.5 0 1 1 20.5 11.5Z"/>
+                  <path d="M8.5 8.2c.2-.5.4-.5.7-.5h.5c.2 0 .3.1.4.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.2.2-.2.4 0 .6.5.9 1.2 1.6 2.1 2.1.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.2.1.3.3.3.5 0 .4-.2 1-.6 1.3"/>
+                </svg>
+              </span>
+              <span class="channel-copy">
+                <strong>Atención inmediata por WhatsApp</strong>
+                <span>Inicie una conversación comercial</span>
+              </span>
+              <span class="channel-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a id="email-contact" class="channel-card"
+               href="mailto:info@empresa.com">
+              <span class="channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.7">
+                  <rect x="3" y="5" width="18" height="14" rx="1"/>
+                  <path d="m3 7 9 6 9-6"/>
+                </svg>
+              </span>
+              <span class="channel-copy">
+                <strong>Correo corporativo</strong>
+                <span id="email-display">info@empresa.com</span>
+              </span>
+              <span class="channel-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <div class="sidebar-note">
+              <h4>Para agilizar su cotización</h4>
+              <ul>
+                <li>Identifique el tipo de equipo requerido.</li>
+                <li>Indique capacidad o características técnicas.</li>
+                <li>Comparta marca, modelo o número de parte cuando corresponda.</li>
+              </ul>
+            </div>
+
+            <div class="institutional-note">
+              <p class="institutional-note-title">ATENCIÓN EMPRESARIAL</p>
+              <p>Solicitudes sujetas a revisión técnica, disponibilidad y condiciones comerciales.</p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="mx-auto max-w-7xl px-5 py-8 lg:px-8">
+      <div class="footer-main">
+        <a href="#inicio" class="footer-brand">
+          SOLUCIONES <span>INDUSTRIALES</span>
+        </a>
+        <p>Maquinaria · Equipamiento · Soporte técnico</p>
+        <a href="#contacto" class="footer-contact-link">Contacto corporativo →</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="current-year"></span> Todos los derechos reservados.</p>
+        <a href="#inicio">Volver al inicio ↑</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

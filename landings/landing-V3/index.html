@@ -1,0 +1,854 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F1F5F9">
+
+  <title>Equipamiento Industrial | Maquinaria y Respaldo Técnico</title>
+  <meta
+    name="description"
+    content="Importación de montacargas, maquinaria vehicular industrial, repuestos y soluciones de servicio postventa para empresas."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "sans-serif"]
+          },
+          colors: {
+            cobalt: {
+              600: "#2563EB",
+              700: "#1D4ED8",
+              800: "#1E40AF"
+            },
+            platinum: "#F1F5F9",
+            graphite: "#020617"
+          },
+          boxShadow: {
+            panel: "0 4px 18px rgba(15, 23, 42, 0.045)",
+            elevated: "0 18px 48px rgba(15, 23, 42, 0.10)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="bg-platinum font-sans text-slate-950 antialiased">
+
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- Barra superior -->
+  <div class="border-b border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-3 text-xs font-medium text-slate-600 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <p class="flex items-center gap-2">
+        <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+        Soluciones para operaciones industriales y flotas
+      </p>
+
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-1">
+        <a class="transition hover:text-blue-700" href="#maquinaria">Catálogo industrial</a>
+        <a class="transition hover:text-blue-700" href="#postventa">Servicio postventa</a>
+        <a class="transition hover:text-blue-700" href="#contacto">Contacto corporativo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navegación -->
+  <header class="sticky top-0 z-40 border-b border-slate-200/90 bg-white/95 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-4 lg:px-8">
+      <a href="#inicio" class="flex min-w-0 items-center gap-3" aria-label="Ir al inicio">
+        <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M6 29V11H13L20 21L27 11H34V29H27V21L20 31L13 21V29H6Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="min-w-0">
+          <span class="block truncate text-base font-extrabold tracking-tight text-slate-950 sm:text-lg">
+            INDUSTRIAL<span class="text-blue-600">.</span>
+          </span>
+          <span class="block text-[9px] font-semibold uppercase tracking-[0.19em] text-slate-500 sm:text-[10px]">
+            Equipamiento y soluciones
+          </span>
+        </span>
+      </a>
+
+      <button
+        id="menu-toggle"
+        class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 text-slate-700 transition hover:bg-slate-50 md:hidden"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <svg id="menu-open-icon" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/>
+        </svg>
+        <svg id="menu-close-icon" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="m6 6 12 12M18 6 6 18" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav id="main-navigation" class="main-navigation" aria-label="Navegación principal">
+        <a href="#maquinaria" class="nav-link">Maquinaria</a>
+        <a href="#postventa" class="nav-link">Postventa</a>
+        <a href="#empresa" class="nav-link">La empresa</a>
+        <a href="#contacto" class="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 text-sm font-semibold text-white transition hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200">
+          Solicitar cotización
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- HERO -->
+    <section id="inicio" class="px-4 pb-8 pt-5 sm:px-6 sm:pb-12 sm:pt-8 lg:px-8 lg:pt-10">
+      <div class="hero-shell mx-auto max-w-7xl overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-panel">
+        <div class="hero-grid">
+          <div class="hero-copy relative z-10 px-6 py-10 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
+            <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-3.5 py-2 text-[10px] font-bold uppercase tracking-[0.15em] text-blue-800 sm:text-xs">
+              <span class="h-1.5 w-1.5 rounded-full bg-blue-600"></span>
+              Soluciones industriales para empresas
+            </div>
+
+            <h1 class="max-w-3xl text-4xl font-extrabold leading-[1.08] tracking-[-0.055em] text-slate-950 sm:text-5xl lg:text-[4.25rem]">
+              EQUIPAMIENTO DE CLASE MUNDIAL.
+              <span class="text-blue-600">RESPALDO ABSOLUTO.</span>
+            </h1>
+
+            <p class="mt-6 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+              Importación directa de montacargas y maquinaria vehicular industrial con el servicio postventa más eficiente y certificado del mercado.
+            </p>
+
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="#contacto" class="inline-flex min-h-13 items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-4 text-sm font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200">
+                Solicitar asesoría comercial
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="#maquinaria" class="inline-flex min-h-13 items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-4 text-sm font-semibold text-slate-800 transition hover:border-slate-300 hover:bg-slate-50">
+                Explorar soluciones
+              </a>
+            </div>
+
+            <div class="mt-9 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-100 pt-6 text-xs font-medium text-slate-600 sm:gap-x-7">
+              <span class="inline-flex items-center gap-2">
+                <svg class="h-4 w-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Atención empresarial
+              </span>
+              <span class="inline-flex items-center gap-2">
+                <svg class="h-4 w-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 3 5 6v5c0 4.4 3 7.6 7 10 4-2.4 7-5.6 7-10V6l-7-3Z"/>
+                  <path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Respaldo técnico
+              </span>
+              <span class="inline-flex items-center gap-2">
+                <svg class="h-4 w-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M3 7h11v11H3zM14 11h4l3 3v4h-7z"/>
+                  <circle cx="7.5" cy="19" r="1.5"/>
+                  <circle cx="17.5" cy="19" r="1.5"/>
+                </svg>
+                Repuestos y mantenimiento
+              </span>
+            </div>
+          </div>
+
+          <div class="hero-visual relative min-h-[320px] overflow-hidden bg-slate-200 sm:min-h-[420px] lg:min-h-[590px]">
+            <img
+              src="assets/images/hero-industrial-corporativo.webp"
+              alt="Maquinaria industrial en un entorno operativo profesional"
+              class="hero-image h-full w-full object-cover"
+              fetchpriority="high"
+              onerror="this.style.display='none'; this.parentElement.classList.add('hero-image-fallback');"
+            >
+            <div class="hero-image-overlay"></div>
+
+            <div class="absolute inset-x-5 bottom-5 rounded-2xl border border-white/60 bg-white/90 p-5 shadow-elevated backdrop-blur-md sm:inset-x-7 sm:bottom-7 sm:p-6">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <p class="text-[10px] font-bold uppercase tracking-[0.18em] text-blue-700">Soluciones integrales</p>
+                  <h2 class="mt-2 text-xl font-bold tracking-tight text-slate-950 sm:text-2xl">Una operación más eficiente.</h2>
+                  <p class="mt-2 max-w-sm text-sm leading-6 text-slate-600">
+                    Equipos, soporte y repuestos alineados con las necesidades de su negocio.
+                  </p>
+                </div>
+                <span class="hidden h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-600 text-white sm:flex">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M3 21h18M5 21V9l7-6 7 6v12M9 21v-7h6v7"/>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barra de confianza -->
+        <div class="trust-bar grid border-t border-slate-200 bg-white sm:grid-cols-3">
+          <div class="trust-item">
+            <span class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M3 7h18v14H3zM7 3v8M17 3v8M3 12h18"/>
+              </svg>
+            </span>
+            <span>
+              <strong>Disponibilidad de stock</strong>
+              <small>Consulta de inventario y plazos</small>
+            </span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M12 3 5 6v5c0 4.4 3 7.6 7 10 4-2.4 7-5.6 7-10V6l-7-3Z"/>
+                <path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>
+              <strong>Garantía y respaldo</strong>
+              <small>Condiciones según cada equipo</small>
+            </span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M12 8v4l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+              </svg>
+            </span>
+            <span>
+              <strong>Soporte especializado</strong>
+              <small>Asistencia técnica y postventa</small>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAQUINARIA BENTO -->
+    <section id="maquinaria" class="px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+      <div class="mx-auto max-w-7xl">
+        <div class="section-heading">
+          <div>
+            <p class="section-eyebrow">Portafolio de soluciones</p>
+            <h2 class="mt-3 max-w-2xl text-3xl font-extrabold tracking-[-0.045em] text-slate-950 sm:text-4xl lg:text-5xl">
+              Equipos diseñados para el trabajo real.
+            </h2>
+          </div>
+          <p class="mt-4 max-w-xl text-sm leading-7 text-slate-600 sm:text-base lg:mt-0">
+            Soluciones para logística, mantenimiento y operación industrial, con orientación comercial según los requerimientos de cada empresa.
+          </p>
+        </div>
+
+        <div class="bento-grid mt-9 lg:mt-12">
+          <!-- Tarjeta principal -->
+          <article class="catalog-card catalog-card-primary group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-panel transition duration-300 hover:-translate-y-1 hover:shadow-elevated">
+            <div class="catalog-image-wrap relative overflow-hidden bg-slate-200">
+              <img
+                src="assets/images/montacargas-industriales.webp"
+                alt="Montacargas industrial para operaciones logísticas"
+                class="catalog-image h-full w-full object-cover transition duration-700 group-hover:scale-[1.035]"
+                loading="lazy"
+                onerror="this.style.display='none'; this.parentElement.classList.add('catalog-image-fallback');"
+              >
+              <span class="absolute left-5 top-5 rounded-lg border border-white/70 bg-white/95 px-3 py-2 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-700">
+                División 01
+              </span>
+              <span class="absolute bottom-5 right-5 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-white text-blue-700 shadow-md">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M5 20V4h5l3 5h4l2 4v7M13 9v11M3 20h18M17 13h4v7"/>
+                  <circle cx="8" cy="20" r="2"/>
+                  <circle cx="17" cy="20" r="2"/>
+                </svg>
+              </span>
+            </div>
+
+            <div class="p-6 sm:p-8">
+              <p class="text-[10px] font-bold uppercase tracking-[0.18em] text-blue-700">Logística y almacenes</p>
+              <div class="mt-2 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                <h3 class="max-w-xl text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">
+                  Montacargas industriales
+                </h3>
+                <span class="w-fit rounded-full border border-slate-200 px-3 py-1.5 text-[10px] font-semibold text-slate-600">
+                  Catálogo técnico
+                </span>
+              </div>
+              <p class="mt-3 max-w-2xl text-sm leading-7 text-slate-600">
+                Equipamiento para movimiento de carga, centros de distribución, plantas productivas y operaciones logísticas.
+              </p>
+
+              <div class="mt-6 overflow-hidden rounded-xl border border-slate-200">
+                <div class="spec-row">
+                  <span>Capacidad de carga</span>
+                  <strong>Según configuración</strong>
+                </div>
+                <div class="spec-row">
+                  <span>Tipo de energía</span>
+                  <strong>Eléctrico / combustión</strong>
+                </div>
+                <div class="spec-row">
+                  <span>Aplicación</span>
+                  <strong>Interior y exterior</strong>
+                </div>
+                <div class="spec-row">
+                  <span>Disponibilidad</span>
+                  <strong>Consultar modelos</strong>
+                </div>
+              </div>
+
+              <div class="mt-6 flex flex-col gap-3 border-t border-slate-100 pt-5 sm:flex-row sm:items-center sm:justify-between">
+                <span class="text-xs text-slate-500">Especificaciones finales según modelo.</span>
+                <a href="#contacto" data-interest="montacargas" class="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 text-sm font-semibold text-white transition hover:bg-blue-700">
+                  Cotizar montacargas
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta secundaria -->
+          <article class="catalog-card catalog-card-secondary group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-panel transition duration-300 hover:-translate-y-1 hover:shadow-elevated">
+            <div class="catalog-image-wrap catalog-image-secondary relative overflow-hidden bg-slate-200">
+              <img
+                src="assets/images/maquinaria-vehicular-industrial.webp"
+                alt="Equipamiento vehicular y maquinaria de servicio industrial"
+                class="catalog-image h-full w-full object-cover transition duration-700 group-hover:scale-[1.035]"
+                loading="lazy"
+                onerror="this.style.display='none'; this.parentElement.classList.add('catalog-image-fallback');"
+              >
+              <span class="absolute left-5 top-5 rounded-lg border border-white/70 bg-white/95 px-3 py-2 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-700">
+                División 02
+              </span>
+            </div>
+
+            <div class="p-6 sm:p-7">
+              <p class="text-[10px] font-bold uppercase tracking-[0.18em] text-blue-700">Infraestructura y flotas</p>
+              <h3 class="mt-2 text-2xl font-bold tracking-tight text-slate-950">
+                Maquinaria vehicular industrial
+              </h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">
+                Equipamiento y soluciones orientadas al mantenimiento, acondicionamiento y operación de vehículos comerciales.
+              </p>
+
+              <div class="mt-5 overflow-hidden rounded-xl border border-slate-200">
+                <div class="spec-row">
+                  <span>Equipamiento</span>
+                  <strong>Según requerimiento</strong>
+                </div>
+                <div class="spec-row">
+                  <span>Compatibilidad</span>
+                  <strong>Por aplicación</strong>
+                </div>
+                <div class="spec-row">
+                  <span>Repuestos</span>
+                  <strong>Consultar catálogo</strong>
+                </div>
+                <div class="spec-row">
+                  <span>Asistencia</span>
+                  <strong>Orientación técnica</strong>
+                </div>
+              </div>
+
+              <a href="#contacto" data-interest="maquinaria-vehicular" class="mt-6 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-800 transition hover:border-blue-200 hover:bg-blue-50 hover:text-blue-800">
+                Consultar equipamiento
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <p class="mt-5 text-xs leading-5 text-slate-500">
+          La configuración, disponibilidad, garantía y características técnicas se confirman mediante cotización formal.
+        </p>
+      </div>
+    </section>
+
+    <!-- POSTVENTA -->
+    <section id="postventa" class="px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <div class="mx-auto max-w-7xl overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-panel">
+        <div class="grid lg:grid-cols-[0.9fr_1.1fr]">
+          <div class="support-intro bg-slate-950 px-6 py-9 text-white sm:px-9 sm:py-11 lg:px-12 lg:py-14">
+            <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-300">Continuidad operativa</p>
+            <h2 class="mt-4 text-3xl font-bold leading-tight tracking-[-0.04em] sm:text-4xl">
+              El respaldo no termina con la entrega.
+            </h2>
+            <p class="mt-5 max-w-lg text-sm leading-7 text-slate-300">
+              Una relación comercial sólida contempla mantenimiento, disponibilidad de repuestos y acompañamiento técnico durante la vida útil del equipo.
+            </p>
+            <a href="#contacto" data-interest="postventa" class="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 text-sm font-semibold text-white transition hover:bg-blue-700">
+              Consultar servicio postventa
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="grid sm:grid-cols-2">
+            <article class="support-feature border-b border-slate-200 p-6 sm:border-b-0 sm:border-r sm:p-8">
+              <span class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="M14.7 6.3a5 5 0 0 0-6.6 6.6L3 18l3 3 5.1-5.1a5 5 0 0 0 6.6-6.6L14 12l-2-2 2.7-3.7Z"/>
+                </svg>
+              </span>
+              <h3 class="mt-5 text-lg font-bold text-slate-950">Mantenimiento técnico</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">
+                Planificación de servicios y orientación para conservar el rendimiento de sus equipos.
+              </p>
+            </article>
+
+            <article class="support-feature border-b border-slate-200 p-6 sm:border-b-0 sm:p-8">
+              <span class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="M4 7h16v14H4zM8 3v8M16 3v8M4 12h16"/>
+                </svg>
+              </span>
+              <h3 class="mt-5 text-lg font-bold text-slate-950">Importación de repuestos</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">
+                Gestión de requerimientos según marca, modelo, número de parte y aplicación.
+              </p>
+            </article>
+
+            <article class="support-feature p-6 sm:border-r sm:border-t sm:border-slate-200 sm:p-8">
+              <span class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="M12 3 5 6v5c0 4.4 3 7.6 7 10 4-2.4 7-5.6 7-10V6l-7-3Z"/>
+                  <path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <h3 class="mt-5 text-lg font-bold text-slate-950">Garantía documentada</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">
+                Información clara sobre cobertura, vigencia y condiciones aplicables a cada producto.
+              </p>
+            </article>
+
+            <article class="support-feature border-t border-slate-200 p-6 sm:p-8">
+              <span class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="M3 12a9 9 0 0 1 15.4-6.4L21 8M21 3v5h-5M21 12a9 9 0 0 1-15.4 6.4L3 16m0 5v-5h5"/>
+                </svg>
+              </span>
+              <h3 class="mt-5 text-lg font-bold text-slate-950">Seguimiento comercial</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">
+                Comunicación directa para consultas, cotizaciones y coordinación de servicios.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDIBILIDAD Y KPIs -->
+    <section id="empresa" class="px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+      <div class="mx-auto max-w-7xl">
+        <div class="section-heading">
+          <div>
+            <p class="section-eyebrow">Confianza basada en procesos</p>
+            <h2 class="mt-3 text-3xl font-extrabold tracking-[-0.045em] text-slate-950 sm:text-4xl">
+              Competencia que se demuestra.
+            </h2>
+          </div>
+          <p class="mt-4 max-w-xl text-sm leading-7 text-slate-600 sm:text-base lg:mt-0">
+            Cada proyecto industrial requiere información verificable, condiciones comerciales claras y seguimiento profesional.
+          </p>
+        </div>
+
+        <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="kpi-card">
+            <span class="kpi-symbol">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM20 8v6M23 11h-6"/>
+              </svg>
+            </span>
+            <p class="kpi-value" data-kpi="clientes">+150</p>
+            <h3>Empresas atendidas</h3>
+            <p>Indicador editable para sustituir por una cifra verificada.</p>
+          </article>
+
+          <article class="kpi-card">
+            <span class="kpi-symbol">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M12 3 5 6v5c0 4.4 3 7.6 7 10 4-2.4 7-5.6 7-10V6l-7-3Z"/>
+                <path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <p class="kpi-value" data-kpi="repuestos">100%</p>
+            <h3>Repuestos originales</h3>
+            <p>Utilizar solo si la política de suministro lo garantiza.</p>
+          </article>
+
+          <article class="kpi-card">
+            <span class="kpi-symbol">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M12 8v4l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+              </svg>
+            </span>
+            <p class="kpi-value" data-kpi="soporte">24/7</p>
+            <h3>Atención operativa</h3>
+            <p>Publicar únicamente si existe cobertura permanente real.</p>
+          </article>
+
+          <article class="kpi-card">
+            <span class="kpi-symbol">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/>
+              </svg>
+            </span>
+            <p class="kpi-value" data-kpi="marcas">Global</p>
+            <h3>Alcance de importación</h3>
+            <p>Personalizar con los mercados y proveedores disponibles.</p>
+          </article>
+        </div>
+
+        <!-- Marcas: reemplazar por marcas efectivamente distribuidas -->
+        <div class="mt-12 overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-panel sm:p-8">
+          <div class="flex flex-col gap-2 border-b border-slate-100 pb-5 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p class="text-[10px] font-bold uppercase tracking-[0.18em] text-blue-700">Red de suministro</p>
+              <h3 class="mt-2 text-xl font-bold tracking-tight text-slate-950">Marcas y fabricantes</h3>
+            </div>
+            <p class="max-w-md text-xs leading-5 text-slate-500">
+              Añadir únicamente logotipos de fabricantes cuya maquinaria o repuestos la empresa comercializa efectivamente.
+            </p>
+          </div>
+
+          <div class="brand-row mt-6">
+            <div class="brand-placeholder"><span>MARCA 01</span><small>Fabricante</small></div>
+            <div class="brand-placeholder"><span>MARCA 02</span><small>Fabricante</small></div>
+            <div class="brand-placeholder"><span>MARCA 03</span><small>Fabricante</small></div>
+            <div class="brand-placeholder"><span>MARCA 04</span><small>Fabricante</small></div>
+            <div class="brand-placeholder"><span>MARCA 05</span><small>Fabricante</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="px-4 pb-16 pt-8 sm:px-6 sm:pb-20 lg:px-8 lg:pb-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="mb-8 max-w-3xl">
+          <p class="section-eyebrow">Atención corporativa</p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-[-0.045em] text-slate-950 sm:text-4xl lg:text-5xl">
+            Conversemos sobre su próxima operación.
+          </h2>
+          <p class="mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+            Comparta los datos de su empresa y el tipo de solución que necesita. Nuestro equipo podrá orientar la consulta comercial.
+          </p>
+        </div>
+
+        <div class="contact-grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-panel lg:grid-cols-[0.78fr_1.22fr]">
+
+          <!-- Columna de respaldo -->
+          <aside class="contact-sidebar relative overflow-hidden bg-slate-950 p-6 text-white sm:p-9 lg:p-10">
+            <div class="relative z-10">
+              <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/10 text-blue-300">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z"/>
+                  <path d="M8 9h8M8 13h5" stroke-linecap="round"/>
+                </svg>
+              </span>
+
+              <p class="mt-7 text-[10px] font-bold uppercase tracking-[0.2em] text-blue-300">Contacto ejecutivo</p>
+              <h3 class="mt-3 text-3xl font-bold leading-tight tracking-[-0.04em] sm:text-4xl">
+                Asesoría Ejecutiva en Tiempo Real
+              </h3>
+              <p class="mt-4 text-sm leading-7 text-slate-300">
+                Atención personalizada para requerimientos de maquinaria, repuestos y servicios industriales.
+              </p>
+
+              <div class="mt-7 flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.06] p-4">
+                <span class="relative mt-1 flex h-2.5 w-2.5 shrink-0">
+                  <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-70"></span>
+                  <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400"></span>
+                </span>
+                <div>
+                  <p class="text-sm font-semibold text-white">Canales de contacto disponibles</p>
+                  <p class="mt-1 text-xs leading-5 text-slate-300">
+                    Confirme el horario de atención con nuestro equipo.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-8 space-y-5">
+                <a id="phone-contact" href="tel:+59100000000" class="contact-method">
+                  <span class="contact-method-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.8 2.1Z"/>
+                    </svg>
+                  </span>
+                  <span>
+                    <small>Teléfono corporativo</small>
+                    <strong id="phone-display">+591 000 00000</strong>
+                  </span>
+                </a>
+
+                <a id="email-sidebar" href="mailto:comercial@empresa.com" class="contact-method">
+                  <span class="contact-method-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                      <rect x="3" y="5" width="18" height="14" rx="2"/>
+                      <path d="m3 7 9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <span>
+                    <small>Correo comercial</small>
+                    <strong id="email-sidebar-display">comercial@empresa.com</strong>
+                  </span>
+                </a>
+
+                <div class="contact-method">
+                  <span class="contact-method-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                      <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                      <circle cx="12" cy="10" r="2.5"/>
+                    </svg>
+                  </span>
+                  <span>
+                    <small>Showroom / taller</small>
+                    <strong id="address-display">Dirección corporativa por confirmar</strong>
+                  </span>
+                </div>
+              </div>
+
+              <div class="mt-9 border-t border-white/10 pt-6">
+                <p class="text-xs leading-6 text-slate-400">
+                  Para una cotización más precisa, incluya el tipo de equipo, aplicación, capacidad requerida y ubicación de operación.
+                </p>
+              </div>
+            </div>
+
+            <div class="sidebar-decoration" aria-hidden="true"></div>
+          </aside>
+
+          <!-- Columna formulario -->
+          <div class="p-5 sm:p-8 lg:p-10">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-[10px] font-bold uppercase tracking-[0.18em] text-blue-700">Solicitud comercial</p>
+                <h3 class="mt-2 text-2xl font-bold tracking-tight text-slate-950">Cuéntenos qué necesita.</h3>
+                <p class="mt-2 text-sm leading-6 text-slate-600">Complete los datos para preparar su solicitud.</p>
+              </div>
+              <span class="hidden h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-700 sm:flex">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="M8 3h8l4 4v14H4V3h4ZM8 3v5h8V3M8 13h8M8 17h6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </div>
+
+            <form id="contact-form" class="mt-7" novalidate>
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div class="form-field">
+                  <label for="contact-name">Nombre y apellido <span>*</span></label>
+                  <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Ej. Carlos Mendoza" required minlength="2" maxlength="100">
+                  <p class="field-error" id="name-error" aria-live="polite"></p>
+                </div>
+
+                <div class="form-field">
+                  <label for="company">Empresa solicitante <span>*</span></label>
+                  <input id="company" name="company" type="text" autocomplete="organization" placeholder="Nombre de la empresa" required minlength="2" maxlength="120">
+                  <p class="field-error" id="company-error" aria-live="polite"></p>
+                </div>
+
+                <div class="form-field">
+                  <label for="email">Correo corporativo <span>*</span></label>
+                  <input id="email" name="email" type="email" autocomplete="email" placeholder="nombre@empresa.com" required maxlength="150">
+                  <p class="field-error" id="email-error" aria-live="polite"></p>
+                </div>
+
+                <div class="form-field">
+                  <label for="phone">Teléfono de contacto <span>*</span></label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+591 ..." required maxlength="30">
+                  <p class="field-error" id="phone-error" aria-live="polite"></p>
+                </div>
+              </div>
+
+              <fieldset class="mt-7">
+                <legend class="text-sm font-bold text-slate-900">
+                  ¿En qué área necesita asesoría? <span class="text-blue-600">*</span>
+                </legend>
+                <p class="mt-1 text-xs leading-5 text-slate-500">Seleccione la opción que mejor describe su solicitud.</p>
+
+                <div class="interest-grid mt-4">
+                  <label class="interest-option">
+                    <input type="radio" name="interest" value="montacargas" required>
+                    <span class="interest-card">
+                      <span class="interest-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                          <path d="M5 20V4h5l3 5h4l2 4v7M13 9v11M3 20h18M17 13h4v7"/>
+                          <circle cx="8" cy="20" r="2"/>
+                          <circle cx="17" cy="20" r="2"/>
+                        </svg>
+                      </span>
+                      <span>
+                        <strong>Montacargas</strong>
+                        <small>Equipos de carga</small>
+                      </span>
+                      <span class="radio-indicator"></span>
+                    </span>
+                  </label>
+
+                  <label class="interest-option">
+                    <input type="radio" name="interest" value="maquinaria-vehicular">
+                    <span class="interest-card">
+                      <span class="interest-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                          <path d="M3 14l2-6h14l2 6v5h-3v-2H6v2H3zM5 14h14M7 8l1-3h8l1 3"/>
+                          <circle cx="7" cy="14" r="1"/>
+                          <circle cx="17" cy="14" r="1"/>
+                        </svg>
+                      </span>
+                      <span>
+                        <strong>Equipamiento vehicular</strong>
+                        <small>Maquinaria industrial</small>
+                      </span>
+                      <span class="radio-indicator"></span>
+                    </span>
+                  </label>
+
+                  <label class="interest-option">
+                    <input type="radio" name="interest" value="repuestos">
+                    <span class="interest-card">
+                      <span class="interest-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                          <path d="M14.7 6.3a5 5 0 0 0-6.6 6.6L3 18l3 3 5.1-5.1a5 5 0 0 0 6.6-6.6L14 12l-2-2 2.7-3.7Z"/>
+                        </svg>
+                      </span>
+                      <span>
+                        <strong>Repuestos</strong>
+                        <small>Importación y suministro</small>
+                      </span>
+                      <span class="radio-indicator"></span>
+                    </span>
+                  </label>
+
+                  <label class="interest-option">
+                    <input type="radio" name="interest" value="postventa">
+                    <span class="interest-card">
+                      <span class="interest-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                          <path d="M12 8v4l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                        </svg>
+                      </span>
+                      <span>
+                        <strong>Servicio postventa</strong>
+                        <small>Mantenimiento y soporte</small>
+                      </span>
+                      <span class="radio-indicator"></span>
+                    </span>
+                  </label>
+                </div>
+                <p class="field-error" id="interest-error" aria-live="polite"></p>
+              </fieldset>
+
+              <div class="form-field mt-6">
+                <label for="details">Detalles del requerimiento <span class="optional-label">(opcional)</span></label>
+                <textarea
+                  id="details"
+                  name="details"
+                  rows="4"
+                  maxlength="2000"
+                  placeholder="Equipo, marca, capacidad, cantidad, aplicación, plazo o número de parte..."
+                ></textarea>
+                <div class="mt-1 flex justify-between gap-3 text-[11px] text-slate-400">
+                  <span>Cuanto más detalle, mejor podremos orientar la solicitud.</span>
+                  <span id="details-count">0/2000</span>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <label class="consent-option">
+                  <input id="consent" name="consent" type="checkbox" required>
+                  <span>Autorizo el uso de estos datos para gestionar mi solicitud comercial y recibir respuesta sobre este requerimiento.</span>
+                </label>
+                <p class="field-error" id="consent-error" aria-live="polite"></p>
+              </div>
+
+              <div class="mt-7 grid gap-3">
+                <button
+                  type="submit"
+                  name="submit-action"
+                  value="whatsapp"
+                  class="inline-flex min-h-13 items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-4 text-sm font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200"
+                >
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                    <path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.1-5.3A8.4 8.4 0 1 1 21 11.5Z"/>
+                    <path d="M8.5 8.5c.3-.6.6-.6.9-.6h.4c.2 0 .4 0 .5.4l.7 1.7c.1.2.1.4 0 .6l-.5.6c-.2.2-.2.4 0 .6.5.8 1.2 1.5 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.3.1.4.3.4.5 0 .3-.2 1-.7 1.4-.5.4-1.2.6-2 .4-1-.2-2.2-.7-3.5-1.9-1.4-1.2-2.2-2.7-2.4-3.7-.2-.8 0-1.4.7-1.8Z"/>
+                  </svg>
+                  Enviar y chatear por WhatsApp
+                </button>
+
+                <button
+                  type="submit"
+                  name="submit-action"
+                  value="email"
+                  class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-blue-200 hover:bg-blue-50 hover:text-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-100"
+                >
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                    <path d="m3 7 9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Recibir cotización en mi correo corporativo
+                </button>
+              </div>
+
+              <p id="form-status" class="mt-4 text-sm leading-6" role="status" aria-live="polite"></p>
+
+              <p class="mt-4 text-center text-[11px] leading-5 text-slate-500">
+                WhatsApp y correo abrirán la aplicación correspondiente con su solicitud preparada para revisión y envío.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-8 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <a href="#inicio" class="flex items-center gap-3">
+        <span class="brand-symbol brand-symbol-small" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M6 29V11H13L20 21L27 11H34V29H27V21L20 31L13 21V29H6Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span>
+          <strong class="block text-sm font-extrabold tracking-tight">INDUSTRIAL<span class="text-blue-600">.</span></strong>
+          <small class="text-[10px] text-slate-500">Equipamiento y soluciones</small>
+        </span>
+      </a>
+
+      <p class="text-xs leading-5 text-slate-500">
+        © <span id="current-year"></span> Industrial. Todos los derechos reservados.
+      </p>
+
+      <a href="#contacto" class="text-xs font-semibold text-slate-700 transition hover:text-blue-700">
+        Contacto comercial <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>

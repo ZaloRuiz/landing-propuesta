@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Importación de montacargas, equipamiento vehicular industrial, repuestos y soporte postventa."
+  >
+  <meta name="theme-color" content="#ffffff">
+
+  <title>IndustrialPro | Potencia en movimiento</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"]
+          },
+          colors: {
+            carmine: {
+              600: "#dc1624",
+              700: "#b9101c"
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="bg-white font-sans text-neutral-900 antialiased">
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- NAVEGACIÓN -->
+  <header class="site-header">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8 lg:px-10">
+
+      <a href="#inicio" class="brand" aria-label="IndustrialPro, inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" fill="none">
+            <path d="M9 5H19L9 35H0L9 5Z" fill="currentColor"/>
+            <path d="M22 5H32L22 35H12L22 5Z" fill="currentColor"/>
+            <path d="M35 5H42L32 35H25L35 5Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <span class="brand-name">INDUSTRIAL<span>PRO</span></span>
+          <span class="brand-caption">MAQUINARIA & SOPORTE INDUSTRIAL</span>
+        </span>
+      </a>
+
+      <button
+        id="menu-toggle"
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-controls="main-navigation"
+        aria-expanded="false"
+      >
+        <svg class="menu-open-icon" id="menu-open-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <svg class="menu-close-icon hidden" id="menu-close-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav id="main-navigation" class="main-navigation" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link nav-link-active">Inicio</a>
+        <a href="#maquinaria" class="nav-link">Maquinaria</a>
+        <a href="#postventa" class="nav-link">Postventa</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <a href="#contacto" class="header-cta">
+        Iniciar cotización
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- HERO -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-layout mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+
+        <div class="hero-copy">
+          <span class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Ingeniería para tu operación
+          </span>
+
+          <h1>
+            POTENCIA EN
+            <span>MOVIMIENTO.</span>
+          </h1>
+
+          <p class="hero-description">
+            Importación directa de montacargas, equipamiento vehicular pesado y soporte postventa.
+          </p>
+
+          <a href="#contacto" class="button-primary">
+            Iniciar cotización
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+          <div class="hero-index" aria-label="Especialidades">
+            <span>01 / IMPORTACIÓN</span>
+            <span class="hero-index-line"></span>
+            <span>02 / SOPORTE</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-glow" aria-hidden="true"></div>
+
+          <img
+            src="assets/images/hero-montacargas.webp"
+            alt="Montacargas industrial moderno en una presentación de estudio"
+            class="hero-image"
+            fetchpriority="high"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+
+          <div class="hero-fallback" aria-hidden="true">
+            <span>INDUSTRIAL</span>
+            <span>POWER</span>
+          </div>
+
+          <div class="hero-image-label">
+            <span class="label-line"></span>
+            <span>Equipamiento industrial</span>
+          </div>
+
+          <div class="hero-visual-index" aria-hidden="true">IP / 01</div>
+        </div>
+
+      </div>
+
+      <!-- BARRA DE CONFIANZA -->
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+        <div class="trust-strip">
+
+          <div class="trust-item">
+            <span class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M3 11L5 7H14V18H3V11ZM14 11H18L21 14V18H14V11Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <circle cx="7.5" cy="18" r="2" fill="white" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="17.5" cy="18" r="2" fill="white" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </span>
+            <span>
+              <strong>Importación directa</strong>
+              <small>Abastecimiento coordinado</small>
+            </span>
+          </div>
+
+          <div class="trust-item">
+            <span class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3L20 6V11C20 16 16.5 19.5 12 21C7.5 19.5 4 16 4 11V6L12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M8.5 12L11 14.5L15.5 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>
+              <strong>Garantía de fábrica</strong>
+              <small>Según cada equipo</small>
+            </span>
+          </div>
+
+          <div class="trust-item">
+            <span class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 8V12L15 14M21 12A9 9 0 1 1 3 12A9 9 0 0 1 21 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>
+              <strong>Soporte técnico</strong>
+              <small>Asistencia postventa</small>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MAQUINARIA -->
+    <section id="maquinaria" class="machinery-section py-20 sm:py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Nuestras divisiones</span>
+            <h2>Diseñados para<br>hacer más.</h2>
+          </div>
+
+          <p>
+            Dos líneas especializadas.<br>
+            Una sola visión de rendimiento.
+          </p>
+        </div>
+
+        <div class="machinery-grid">
+
+          <!-- MONTACARGAS -->
+          <article class="machinery-card machinery-card-primary">
+            <a
+              href="#contacto"
+              class="machinery-card-link"
+              data-interest="montacargas"
+              aria-label="Consultar por montacargas industriales"
+            >
+              <div class="machinery-image-wrap">
+                <img
+                  src="assets/images/montacargas-industrial.webp"
+                  alt="Montacargas industrial para operaciones logísticas"
+                  class="machinery-image"
+                  loading="lazy"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                >
+                <div class="image-placeholder" aria-hidden="true"></div>
+                <span class="image-number">01 — DIVISIÓN</span>
+                <span class="card-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+
+              <div class="machinery-card-copy">
+                <div>
+                  <h3>Montacargas<br>industriales.</h3>
+                  <p>Importación <i></i> Capacidad <i></i> Garantía</p>
+                </div>
+                <span class="card-index">01</span>
+              </div>
+            </a>
+          </article>
+
+          <!-- EQUIPAMIENTO VEHICULAR -->
+          <article class="machinery-card machinery-card-secondary">
+            <a
+              href="#contacto"
+              class="machinery-card-link"
+              data-interest="maquinaria"
+              aria-label="Consultar por equipamiento vehicular industrial"
+            >
+              <div class="machinery-image-wrap">
+                <img
+                  src="assets/images/equipamiento-vehicular.webp"
+                  alt="Vehículo pesado industrial y equipamiento de trabajo"
+                  class="machinery-image"
+                  loading="lazy"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                >
+                <div class="image-placeholder image-placeholder-dark" aria-hidden="true"></div>
+                <span class="image-number">02 — DIVISIÓN</span>
+                <span class="card-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+
+              <div class="machinery-card-copy">
+                <div>
+                  <h3>Equipamiento<br>vehicular industrial.</h3>
+                  <p>Importación <i></i> Capacidad <i></i> Garantía</p>
+                </div>
+                <span class="card-index">02</span>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- POSTVENTA -->
+    <section id="postventa" class="after-sales-section py-16 sm:py-20 lg:py-24">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+
+        <div class="after-sales-heading">
+          <span class="eyebrow">Más allá del equipo</span>
+          <h2>El respaldo continúa.</h2>
+        </div>
+
+        <div class="service-row">
+
+          <div class="service-item">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 13V11A8 8 0 0 1 20 11V13M4 13H7V19H5A2 2 0 0 1 3 17V15A2 2 0 0 1 4 13ZM20 13H17V19H19A2 2 0 0 0 21 17V15A2 2 0 0 0 20 13ZM17 19C16 21 14 21 12 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>Soporte<br>certificado</span>
+          </div>
+
+          <div class="service-item">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M14 6L18 2L22 6L18 10L14 6ZM14 6L8 12M6 14L3 17L7 21L10 18M3 3L7 7M5 2L2 5L19 22L22 19L5 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>Repuestos<br>originales</span>
+          </div>
+
+          <div class="service-item">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M14.5 6.5A5 5 0 0 0 8 13L3 18L6 21L11 16A5 5 0 0 0 17.5 9.5L14 13L11 10L14.5 6.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 3L21 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span>Mantenimiento<br>preventivo</span>
+          </div>
+
+          <div class="service-item">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3L20 6V11C20 16 16.5 19.5 12 21C7.5 19.5 4 16 4 11V6L12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M8.5 12L11 14.5L15.5 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>Garantía<br>extendida</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact-section py-20 sm:py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+
+        <div class="contact-card">
+          <div class="contact-card-top">
+            <span class="eyebrow">Atención especializada</span>
+            <span class="contact-status">
+              <span></span>
+              Consultas comerciales
+            </span>
+          </div>
+
+          <div class="contact-card-heading">
+            <h2>Línea de<br><span>interés:</span></h2>
+            <p>Un punto de contacto.<br>La solución adecuada.</p>
+          </div>
+
+          <form id="contact-form" novalidate>
+            <fieldset class="interest-fieldset">
+              <legend class="sr-only">Selecciona tu área de interés</legend>
+
+              <div class="interest-options">
+                <label class="interest-option">
+                  <input
+                    type="radio"
+                    name="interest"
+                    value="montacargas"
+                    checked
+                  >
+                  <span class="interest-pill">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M3 11L5 7H14V18H3V11ZM14 11H18L21 14V18H14V11Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                      <circle cx="7.5" cy="18" r="2" fill="white" stroke="currentColor" stroke-width="1.5"/>
+                      <circle cx="17.5" cy="18" r="2" fill="white" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    Montacargas
+                  </span>
+                </label>
+
+                <label class="interest-option">
+                  <input type="radio" name="interest" value="maquinaria">
+                  <span class="interest-pill">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M3 10L5 6H15V17H3V10ZM15 10H18L21 13V17H15V10Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                      <circle cx="7.5" cy="17" r="2" fill="white" stroke="currentColor" stroke-width="1.5"/>
+                      <circle cx="18" cy="17" r="2" fill="white" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    Maquinaria
+                  </span>
+                </label>
+
+                <label class="interest-option">
+                  <input type="radio" name="interest" value="soporte">
+                  <span class="interest-pill">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M4 13V11A8 8 0 0 1 20 11V13M4 13H7V19H5A2 2 0 0 1 3 17V15A2 2 0 0 1 4 13ZM20 13H17V19H19A2 2 0 0 0 21 17V15A2 2 0 0 0 20 13Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Soporte
+                  </span>
+                </label>
+
+                <label class="interest-option">
+                  <input type="radio" name="interest" value="repuestos">
+                  <span class="interest-pill">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M14 7L17 4L20 7L17 10L14 7ZM14 7L9 12M7 14L4 17L7 20L10 17M3 3L7 7M5 2L2 5L19 22L22 19L5 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Repuestos
+                  </span>
+                </label>
+              </div>
+
+              <p class="field-error" id="interest-error" aria-live="polite"></p>
+            </fieldset>
+
+            <div class="contact-input-wrap">
+              <label class="sr-only" for="contact-destination">
+                WhatsApp o correo corporativo
+              </label>
+
+              <span class="input-leading-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M21 11.5A8.5 8.5 0 0 1 8.4 19L3 21L4.8 15.5A8.5 8.5 0 1 1 21 11.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 9C8.5 12 11 14 14 14.5L15.5 12.8L13.5 11.8L12.5 13C11.5 12.5 10 11 9.5 10L10.5 9L9.5 7L8 9Z" fill="currentColor"/>
+                </svg>
+              </span>
+
+              <input
+                id="contact-destination"
+                name="destination"
+                type="text"
+                inputmode="text"
+                autocomplete="email"
+                placeholder="WhatsApp o correo corporativo"
+                aria-describedby="destination-hint destination-error"
+                maxlength="150"
+                required
+              >
+
+              <span class="input-required" aria-hidden="true">↗</span>
+            </div>
+
+            <p id="destination-hint" class="input-hint">
+              Te contactaremos por el canal que indiques.
+            </p>
+            <p id="destination-error" class="field-error" aria-live="polite"></p>
+
+            <button type="submit" class="contact-submit">
+              <span>Conectar con un Ingeniero</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <p class="form-privacy">
+              Tus datos se utilizarán únicamente para atender tu consulta.
+            </p>
+          </form>
+        </div>
+
+        <div class="contact-bottom-note">
+          <span>INDUSTRIALPRO</span>
+          <span>Equipos que impulsan grandes proyectos.</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 px-5 py-8 sm:px-8 md:flex-row md:items-center md:justify-between lg:px-10">
+
+      <a href="#inicio" class="brand brand-footer" aria-label="IndustrialPro, volver al inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" fill="none">
+            <path d="M9 5H19L9 35H0L9 5Z" fill="currentColor"/>
+            <path d="M22 5H32L22 35H12L22 5Z" fill="currentColor"/>
+            <path d="M35 5H42L32 35H25L35 5Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <span class="brand-name">INDUSTRIAL<span>PRO</span></span>
+          <span class="brand-caption">MAQUINARIA & SOPORTE INDUSTRIAL</span>
+        </span>
+      </a>
+
+      <p class="footer-tagline">Equipos que impulsan<br>grandes proyectos.</p>
+
+      <div class="footer-meta">
+        <span>© <span id="current-year"></span> IndustrialPro</span>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE CONFIRMACIÓN -->
+  <dialog id="success-modal" class="success-modal" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button
+        type="button"
+        class="modal-close"
+        id="modal-close"
+        aria-label="Cerrar ventana"
+      >
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <span class="modal-symbol" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+
+      <span class="eyebrow">Solicitud preparada</span>
+      <h2 id="modal-title">Un paso más.</h2>
+      <p id="modal-message">
+        Tu consulta está preparada. Continúa para completar el contacto.
+      </p>
+
+      <a id="modal-email-link" class="button-primary modal-action" href="#">
+        Abrir correo
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <button type="button" class="modal-secondary" id="modal-done">
+        Cerrar
+      </button>
+    </div>
+  </dialog>
+
+</body>
+</html>
